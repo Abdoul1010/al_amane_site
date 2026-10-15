@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Al Amane – Chaque livraison est une promesse tenue</title>
+<meta name="description" content="Al Amane livre vos colis, documents et repas partout à Niamey, avec un livreur vérifié que vous suivez en direct.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f7f6f1;--surface:#fff;--ink:#10211a;--muted:#55665d;--line:#e0e3d9;--deep:#003d25;--deep2:#06553a;--gold:#e0a526;--gold-ink:#7a5300;--soft:#e6f0e9;--accent:#003d25;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;margin:0;line-height:1.05;letter-spacing:-.025em}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+nav{position:sticky;top:0;z-index:10;background:var(--deep);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font:800 22px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.logo img{width:42px;height:40px}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-size:15px}
+nav ul a{text-decoration:none;opacity:.8}nav ul a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:14px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.gold{background:var(--gold);color:#1c1300}.ghost{border-color:rgba(255,255,255,.4);color:#fff}
+nav .btn{padding:9px 18px;font-size:15px;border-radius:11px}
+/* hero */
+.hero{background:var(--deep);color:#fff;position:relative;overflow:hidden;padding:72px 0 96px}
+.hero::before{content:"";position:absolute;right:-180px;top:-200px;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,var(--deep2),transparent 68%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,72px);font-weight:800}
+.hero h1 span{display:block;color:var(--gold)}
+.hero p{font-size:20px;max-width:27em;opacity:.88;margin:24px 0 32px}
+.stores{display:flex;gap:12px;flex-wrap:wrap}
+.store{display:flex;align-items:center;gap:12px;padding:10px 20px;border-radius:14px;border:1.5px solid rgba(255,255,255,.35);text-decoration:none;line-height:1.15}
+.store b{display:block;font-size:17px}.store small{font-size:12px;opacity:.75}
+.store svg{width:26px;height:26px;fill:#fff}
+.stage{position:relative;height:560px}
+.phone{position:absolute;left:50%;top:0;width:280px;margin-left:-140px;border:9px solid #0a1a13;border-radius:42px;background:#f7f6f1;color:#10211a;overflow:hidden;transform:rotate(4deg);box-shadow:0 40px 80px -20px rgba(0,0,0,.6)}
+.map{position:relative;height:330px;background:#dfeee4}
+.map svg{width:100%;height:100%;display:block}
+.rd{fill:none;stroke:#fff;stroke-width:11;stroke-linecap:round}
+.rt{fill:none;stroke:#003d25;stroke-width:5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.2s .4s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.rider{position:absolute;left:0;top:0;width:38px;height:38px;margin:-19px 0 0 -19px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:19px;box-shadow:0 0 0 7px rgba(224,165,38,.3);offset-path:path("M36 290 C 96 280, 86 180, 150 170 S 220 90, 246 54");animation:ride 10s 2.6s linear infinite both;offset-distance:0%}
+@keyframes ride{from{offset-distance:0%}to{offset-distance:100%}}
+.sheet{padding:16px 18px 20px}
+.sheet small{color:#55665d;font-size:13px}.sheet b{font:700 19px "Bricolage Grotesque",sans-serif;display:block;margin:2px 0 12px}
+.who{display:flex;align-items:center;gap:12px}
+.av{width:42px;height:42px;border-radius:50%;background:#003d25;color:#fff;display:grid;place-items:center;font-weight:700}
+.who div{flex:1;font-size:14px;line-height:1.3}.who span{color:#55665d}
+.call{width:40px;height:40px;border-radius:12px;background:#fbf0d4;display:grid;place-items:center}
+.bar{height:6px;border-radius:6px;background:#e0e3d9;margin-top:16px;overflow:hidden}.bar u{display:block;height:100%;width:62%;background:#e0a526}
+.chip{position:absolute;background:var(--surface);color:var(--ink);border-radius:16px;padding:12px 16px;font-size:14px;font-weight:700;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);display:flex;align-items:center;gap:10px}
+.chip i{width:26px;height:26px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--accent);font-style:normal}
+.c1{left:-4%;top:150px}.c2{right:-2%;bottom:70px}
+/* trust strip */
+.strip{background:var(--surface);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:26px;padding-bottom:26px}
+.strip div{font-weight:700;font-size:16px;line-height:1.3}.strip span{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:3px}
+section{padding:96px 0}
+h2{font-size:clamp(34px,5vw,58px);font-weight:800;max-width:14em}
+.lead{color:var(--muted);font-size:19px;max-width:34em;margin:18px 0 0}
+/* send */
+.send{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.item{border-radius:22px;padding:26px 22px 22px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;background:var(--surface);border:1px solid var(--line)}
+.item:nth-child(1){background:var(--deep);color:#fff;border:0}.item:nth-child(2){background:var(--gold);color:#1c1300;border:0}
+.item em{font-style:normal;font-size:44px;line-height:1}.item h3{font-size:25px;margin-bottom:4px}.item p{margin:0;font-size:15px;opacity:.8}
+/* why */
+.why{background:var(--soft)}
+.rows{margin-top:56px;display:grid;gap:0}
+.row{display:grid;grid-template-columns:90px 1fr 1.2fr;gap:28px;padding:34px 0;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);align-items:start}
+.row:last-child{border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+.row .ic{width:64px;height:64px;border-radius:20px;background:var(--deep);display:grid;place-items:center}
+.row .ic svg{width:30px;height:30px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.row h3{font-size:clamp(26px,3.4vw,38px)}.row p{margin:0;color:var(--muted);font-size:18px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;counter-reset:s}
+.steps div{counter-increment:s;padding-right:36px;position:relative}
+.steps div::before{content:counter(s);font:800 96px/1 "Bricolage Grotesque",sans-serif;color:var(--gold);display:block;margin-bottom:6px}
+.steps h3{font-size:26px;margin-bottom:8px}.steps p{margin:0;color:var(--muted)}
+/* city */
+.city{background:var(--deep);color:#fff}
+.city .lead{color:rgba(255,255,255,.75)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px}
+.tags span{padding:11px 20px;border-radius:99px;border:1.5px solid rgba(255,255,255,.3);font-weight:500}
+.tags span:nth-child(3n){background:var(--gold);border-color:var(--gold);color:#1c1300;font-weight:700}
+/* people */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+.box{border-radius:26px;padding:40px;background:var(--surface);border:1px solid var(--line)}
+.box h3{font-size:32px;margin-bottom:10px}.box p{margin:0 0 24px;color:var(--muted)}
+.box ul{margin:0 0 28px;padding:0;list-style:none}.box li{padding:8px 0 8px 28px;position:relative}
+.box li::before{content:"";position:absolute;left:2px;top:17px;width:13px;height:7px;border-left:3px solid var(--gold);border-bottom:3px solid var(--gold);transform:rotate(-45deg)}
+.box.d{background:var(--gold);border:0;color:#1c1300}.box.d p{color:#4a3600}.box.d li::before{border-color:var(--deep)}
+.box.d .btn{background:var(--deep);color:#fff}.box:not(.d) .btn{background:var(--deep);color:#fff}
+/* faq */
+.faq{max-width:780px;margin-top:40px}
+details{border-top:1px solid var(--line);padding:22px 0}details:last-child{border-bottom:1px solid var(--line)}
+summary{font:700 21px "Bricolage Grotesque",sans-serif;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:28px;line-height:1;color:var(--gold-ink);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}details p{margin:12px 0 0;color:var(--muted);max-width:38em}
+/* final */
+.final{background:var(--deep);color:#fff;text-align:center;padding:96px 0 80px}
+.final img{width:170px;height:170px;margin:0 auto 10px;display:block}
+.final h2{margin:0 auto;max-width:11em}.final p{opacity:.8;margin:18px auto 30px;max-width:30em;font-size:19px}
+.final .stores{justify-content:center}
+footer{background:#00291a;color:rgba(255,255,255,.65);font-size:14px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:860px){nav ul{display:none}.hero{padding:44px 0 60px}.hero .wrap,.two{grid-template-columns:1fr}.stage{height:520px}.strip .wrap{grid-template-columns:1fr 1fr}.send{grid-template-columns:1fr 1fr}.row{grid-template-columns:64px 1fr;gap:18px}.row p{grid-column:1/-1}.steps{grid-template-columns:1fr;gap:30px}section{padding:64px 0}.box{padding:28px}.c1{left:0}.c2{right:0}}
+@media(prefers-reduced-motion:reduce){.rt{animation:none;stroke-dashoffset:0}.rider{animation:none;offset-distance:55%}html{scroll-behavior:auto}}
+
+.legal{display:none;position:fixed;inset:0;z-index:50;overflow:auto;background:var(--bg);padding-top:env(safe-area-inset-top,0px)}
+.legal:target{display:block}.legal{padding-bottom:0}
+.lbar{position:sticky;top:0;background:var(--deep);color:#fff;padding:12px 0;z-index:2}
+.lbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.lbar a{color:#fff;text-decoration:none;font-weight:700;font-size:15px}
+.lt{display:flex;gap:6px}.lt a{opacity:.75;padding:7px 14px;border-radius:99px}.lt a.on{background:var(--gold);color:#1c1300;opacity:1}
+.doc{max-width:780px;margin:0 auto;padding:44px 24px 90px}
+.doc h1{font-size:clamp(32px,5vw,48px);font-weight:800;margin-bottom:8px}
+.doc .meta{color:var(--muted);font-size:14px;margin:0 0 28px}
+.doc h2{font-size:23px;margin:34px 0 8px;max-width:none}
+.doc p,.doc li{font-size:16px;margin:8px 0}.doc ul{padding-left:22px;margin:8px 0}
+.doc .tb{overflow-x:auto}.doc table{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0}
+.doc th,.doc td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}.doc th{background:var(--soft)}
+.ph{background:#fbf0d4;color:#7a5300;padding:0 5px;border-radius:5px;font-weight:700}
+footer a{color:#fff}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#top" aria-label="Al Amane, accueil"><img src="data:image/svg+xml;base64,CgoKPHN2ZwogICB3aWR0aD0iMTAwMCIKICAgaGVpZ2h0PSIxMDAwIgogICB2aWV3Qm94PSIzOCAyNiAxNzIgMTY2IgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcxIgogICBzb2RpcG9kaTpkb2NuYW1lPSJBbCBBbWFuZSBibGFuYy5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuNC40IChkY2FmM2U3ZDllLCAyMDI2LTA1LTA1KSIKICAgaW5rc2NhcGU6ZXhwb3J0LWZpbGVuYW1lPSJBbCBBbWFuZSBjby5wbmciCiAgIGlua3NjYXBlOmV4cG9ydC14ZHBpPSIzMDAiCiAgIGlua3NjYXBlOmV4cG9ydC15ZHBpPSIzMDAiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgCiAgPGRlZnMKICAgICBpZD0iZGVmczEiIC8+CiAgPGcKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjYiCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxvZ28iCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4xNTQzMjIyNSwxMy4zNTYyMTMpIj4KICAgIDxnCiAgICAgICBpbmtzY2FwZTpsYWJlbD0iRm9ybWVzIgogICAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICAgIGlkPSJsYXllcjEiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjgyNzI5NTI4LDAsMCwwLjgyNzI5NTI4LDY5LjExMjAwOCwwLjQ2NzAxNjY1KSIKICAgICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZSI+CiAgICAgIDxnCiAgICAgICAgIGlua3NjYXBlOmdyb3VwbW9kZT0ibGF5ZXIiCiAgICAgICAgIGlkPSJsYXllcjEtNSIKICAgICAgICAgaW5rc2NhcGU6bGFiZWw9IkltYWdlIDEiCiAgICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDYuMjE2MzE1NSwwLDAsNi4yMTYzMTU1LC0yMjIuMDk5ODMsLTI0NS43OTMwNCkiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lO2ZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIKICAgICAgICAgICBkPSJtIDM3Ljk0NDUyNiw1OS4wMDE0NiA4LjU0ODkwNSwtMTQuNzUwMzY1IGMgMCwwIDEuMzY0Nzk1LC0zLjAwMTQ3OSAzLjAzNzA3NywwLjAxNDgyIDEuNjcyMjgxLDMuMDE2MzAxIDE0LjIwMDg3OSwyNC41MTA3MjUgMTQuMjAwODc5LDI0LjUxMDcyNSAwLDAgMi42OTc4MSwzLjY3ODgzMyAtMS4zMzEzODcsMy42MDg3NiAtNC4wMjkxOTcsLTAuMDcwMDcgLTYuNzk3MDgsLTAuMDcwMDcgLTYuNzk3MDgsLTAuMDcwMDcgMCwwIC0yLjk0MzA2NiwwLjQ1NTQ3NCAtNS4xMTUzMjksLTMuMjIzMzU4IC0yLjE3MjI2MiwtMy42Nzg4MzIgLTMuMjkzNDMsLTUuNjc1OTEzIC0zLjI5MzQzLC01LjY3NTkxMyAwLDAgLTIuMTcyMjYzLC01LjM2MDU4MyAtOS4yNDk2MzUsLTQuNDE0NTk5IHoiCiAgICAgICAgICAgaWQ9InBhdGgxMSIgLz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgICAgICBpZD0ibGF5ZXIyIgogICAgICAgICBpbmtzY2FwZTpsYWJlbD0iSW1hZ2UgMiIKICAgICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoNi4yMTYzMTU1LDAsMCw2LjIxNjMxNTUsLTIyMi4wOTk4MywtMjQ1Ljc5MzA0KSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxIgogICAgICAgICAgIGQ9Im0gMzEuODgzMjEyLDY5LjQyNDgxOCAzLjI5MzQzLC01Ljc0NTk4NiBjIDAsMCAxLjg3NDQ1MywtMy45NTkxMjQgNi45NzIyNjMsLTIuNjQ1MjU1IDQuMjkxOTcxLDEuOTQ0NTI1IDMuODAxNDYsNi4wMDg3NTkgMy44MDE0Niw2LjAwODc1OSAwLDAgLTAuNzM1NzY2LDQuOTkyNzAxIC01LjUwMDczLDUuMjIwNDM4IC00LjgzNTAzNiwtMC4wMzUwNCAtNy4wNTk4NTQsLTAuMDM1MDQgLTcuMDU5ODU0LC0wLjAzNTA0IDAsMCAtMy4yOTM0MzEsMC40MjA0MzggLTEuNTA2NTY5LC0yLjgwMjkxOSB6IgogICAgICAgICAgIGlkPSJwYXRoMTIiIC8+CiAgICAgIDwvZz4KICAgICAgPGVsbGlwc2UKICAgICAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lO2ZpbGw6I2ZmZmZmZjtzdHJva2Utd2lkdGg6OS4zNzExNyIKICAgICAgICAgaWQ9InBhdGgxMyIKICAgICAgICAgY3g9IjI3LjY5ODU1MyIKICAgICAgICAgY3k9IjE2Ny4wOTgxIgogICAgICAgICByeD0iMzAuNDkzMjYxIgogICAgICAgICByeT0iMjkuNDE1MjE4IiAvPgogICAgPC9nPgogICAgPGcKICAgICAgIGlua3NjYXBlOmdyb3VwbW9kZT0ibGF5ZXIiCiAgICAgICBpZD0ibGF5ZXI0IgogICAgICAgaW5rc2NhcGU6bGFiZWw9IkJveCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuNjEzNTE1NTIsMCwwLDAuNjEzNTE1NTIsMTQ3LjQ5MTgxLDExNS43NjA1MSkiCiAgICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmU7ZmlsbDojMDAwMDAwIj4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lO29wYWNpdHk6MTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuMzE5ODE3IgogICAgICAgICBkPSJtIDM0LjgzNTExNSwxNjIuNjIxMTEgNS40OTE5OTUsLTIuNjA5ODggdiA2LjI1MjQzIGwgLTQuNjc1MjM2LDIuMTg3NDEgYyAwLDAgLTAuNDUwNjI2LDAuNDk3NTYgLTAuODYzNjk4LC0wLjQzMTg1IDAuMDI4MTcsLTAuOTY2OTcgMC4wNDY5NCwtNS4zOTgxMSAwLjA0Njk0LC01LjM5ODExIHoiCiAgICAgICAgIGlkPSJwYXRoMTkiCiAgICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEuMzQ4NDUwNCwwLDAsMS4zNDg0NTA0LC0xMjcuNzU1MjEsLTE4Ny45MjI3KSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MSIKICAgICAgICAgZD0ibSAtMTExLjM4NjM1LDIyLjc5MjU4MSA2LjYzOTU4LC0zLjA3MjA0NCAyMi41NDQ4MzIsOS44MTA3MiAtNy4yODM3MTYsMy40MTg4ODcgeiIKICAgICAgICAgaWQ9InBhdGgxNCIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MSIKICAgICAgICAgZD0ibSAtOTYuNDY3MjExLDE2LjM5MTk1MyA2LjU5OTIxMSwtMy4xNTc4MyAyMi42NzAwNzgsOS41MTc3MzMgLTcuMjM4Nzk4LDMuNTEyOTkxIHoiCiAgICAgICAgIGlkPSJwYXRoMTUiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjEiCiAgICAgICAgIGQ9Im0gLTExMi42MjUwOCwyNC41MjY3OTkgMjIuMDQ5MzQ2LDEwLjIwNzExMiAwLjA0OTU1LDI1LjcxNTk3NyAtMjEuNjAzNDA2LC05LjkwOTgxOCBjIDAsMCAtMC4zOTYzOSwtMC4yNDc3NDUgLTAuMzk2MzksLTEuMzg3Mzc0IDAsLTEuMTM5NjI5IC0wLjA5OTEsLTI0LjYyNTg5NyAtMC4wOTkxLC0yNC42MjU4OTcgeiIKICAgICAgICAgaWQ9InBhdGgxNiIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MSIKICAgICAgICAgZD0ibSAtODguNDQ1MTIzLDM0Ljg4MjU1OCA3LjY4MDEwOSwtMy41MTc5ODUgLTAuMDQ5NTUsNy4yODM3MTYgYyAwLDAgMC4zOTYzOTMsMS4xODkxNzggMS4wOTAwOCwwLjU5NDU4OSAwLjg0MjMzNCwtMC40NDU5NDIgNi4zNDIyODMsLTIuOTcyOTQ1IDYuMzQyMjgzLC0yLjk3Mjk0NSB2IC04LjQyMzM0NSBsIDYuOTM2ODczLC0zLjE3MTE0MiAwLjA0OTU1LDI1LjUxNzc4MSAtMjEuOTUwMjQ3LDEwLjE1NzU2MyB6IgogICAgICAgICBpZD0icGF0aDE3IiAvPgogICAgICA8cGF0aAogICAgICAgICBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC40MzE3NjgiCiAgICAgICAgIGQ9Im0gLTEwNC44MDg0MywxOS42NzA0MzcgOC4zMDg2NzIsLTMuMjc2MjQgMjIuMDE4ODkyLDkuODY0NTE3IC03Ljc0MzQsMy4yNzE3NjMgeiIKICAgICAgICAgaWQ9InBhdGgxOCIgLz4KICAgIDwvZz4KICAgIDxnCiAgICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgICAgaWQ9ImxheWVyNSIKICAgICAgIGlua3NjYXBlOmxhYmVsPSJWZW50IgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoNC42MTc2MjM0LDAsMCw0LjYxNzYyMzQsLTg4Ljc3MDQ0MSwtMTgyLjUxNzMyKSI+CiAgICAgIDxyZWN0CiAgICAgICAgIHN0eWxlPSJkaXNwbGF5Om5vbmU7ZmlsbDojZTBhNTI2O2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDowLjgwMDI4NyIKICAgICAgICAgaWQ9InJlY3QxNyIKICAgICAgICAgd2lkdGg9IjExLjkxNTM3NyIKICAgICAgICAgaGVpZ2h0PSIwLjMyNTk0OTc5IgogICAgICAgICB4PSI2My4wMTA0NDEiCiAgICAgICAgIHk9Ii0xOC45NDMzNjMiCiAgICAgICAgIHJ5PSIwLjE2Mjk3NDg5IgogICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjUwNTM1NjkyLDAuODYyOTEwNDIsLTAuODU4NTkyMywwLjUxMjY1OTAxLDAsMCkiIC8+CiAgICAgIDxyZWN0CiAgICAgICAgIHN0eWxlPSJkaXNwbGF5Om5vbmU7ZmlsbDojZTBhNTI2O2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDowLjcxMjU4NCIKICAgICAgICAgaWQ9InJlY3QxOCIKICAgICAgICAgd2lkdGg9IjkuOTg1OTI5NSIKICAgICAgICAgaGVpZ2h0PSIwLjMwODM1MzY2IgogICAgICAgICB4PSI2MC43MjE4OTciCiAgICAgICAgIHk9Ii0xOC4yNzUxODMiCiAgICAgICAgIHJ5PSIwLjE1NDE3NjgzIgogICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjUwNTYwMTA3LDAuODYyNzY3MzgsLTAuOTUwNDUwMTQsMC4zMTA4NzcwMywwLDApIiAvPgogICAgICA8cmVjdAogICAgICAgICBzdHlsZT0iZGlzcGxheTpub25lO2ZpbGw6I2UwYTUyNjtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC43NzE2NzgiCiAgICAgICAgIGlkPSJyZWN0MTkiCiAgICAgICAgIHdpZHRoPSIxMC4yNzEwMzgiCiAgICAgICAgIGhlaWdodD0iMC4zNTE1Nzk4NyIKICAgICAgICAgeD0iNTcuNjEyOTMiCiAgICAgICAgIHk9Ii0xOC40Njg0NjQiCiAgICAgICAgIHJ5PSIwLjE3NTc4OTk0IgogICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjQ5NzAzNDQ4LDAuODY3NzMwNzksLTAuOTg1MDEwMjksMC4xNzI0OTU1OSwwLDApIiAvPgogICAgICA8cGF0aAogICAgICAgICBzdHlsZT0iZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDowLjA1NzI5ODUiCiAgICAgICAgIGQ9Im0gNDcuNjMxMzA0LDQ0LjMwMjA2NSA1LjgxMzQzMiwxMC4yNDcyMzkgMC4yNzU5MjMsLTAuMTcxMjY2IHoiCiAgICAgICAgIGlkPSJwYXRoMSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC4wNTcyOTg2IgogICAgICAgICBkPSJtIDQ3LjY0MDM3Niw0Ni40MzgxMjEgNC45MTEzMjgsOC42MTE2NDkgMC4yODI1NjgsLTAuMTQ4MDE0IHoiCiAgICAgICAgIGlkPSJwYXRoMiIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC4wNTcyOTg2IgogICAgICAgICBkPSJtIDQ2LjcyNjg4Myw0Ni42NDIxNzkgNC45MzgyNDEsOC45MzQ1ODUgMC4yNjkxMTYsLTAuMTc0OTIzIHoiCiAgICAgICAgIGlkPSJwYXRoMyIgLz4KICAgIDwvZz4KICAgIDx0ZXh0CiAgICAgICB4bWw6c3BhY2U9InByZXNlcnZlIgogICAgICAgc3R5bGU9ImZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1zaXplOjEwLjkwNTdweDtmb250LWZhbWlseTonTHV0ZmV5IEFyYWJpYyBERU1PJzstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOidMdXRmZXkgQXJhYmljIERFTU8nO3dyaXRpbmctbW9kZTpsci10YjtkaXJlY3Rpb246bHRyO2ZpbGw6IzAwMDAwMDtzdHJva2Utd2lkdGg6MC4yNTU2MDEiCiAgICAgICB4PSIxNzQuNjYzNTYiCiAgICAgICB5PSIxNjUuNTY2MDQiCiAgICAgICBpZD0idGV4dDIiPjx0c3BhbgogICAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIgogICAgICAgICBpZD0idHNwYW4yIgogICAgICAgICBzdHlsZT0iZm9udC1zaXplOjEwLjkwNTdweDtmaWxsOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjAuMjU1NjAxIgogICAgICAgICB4PSIxNzQuNjYzNTYiCiAgICAgICAgIHk9IjE2NS41NjYwNCI+2KfZhNij2YXYp9mGPC90c3Bhbj48L3RleHQ+CiAgPC9nPgogIDxnCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIzIgogICAgIGlua3NjYXBlOmxhYmVsPSJUZXh0ZXMiCiAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lIj4KICAgIDx0ZXh0CiAgICAgICB4bWw6c3BhY2U9InByZXNlcnZlIgogICAgICAgc3R5bGU9ImZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6NjAwO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1zaXplOjQ1Ljg2MTFweDtmb250LWZhbWlseTpQb3BwaW5zOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J1BvcHBpbnMsIFNlbWktQm9sZCc7Zm9udC12YXJpYW50LWxpZ2F0dXJlczpub3JtYWw7Zm9udC12YXJpYW50LWNhcHM6bm9ybWFsO2ZvbnQtdmFyaWFudC1udW1lcmljOm5vcm1hbDtmb250LXZhcmlhbnQtZWFzdC1hc2lhbjpub3JtYWw7d3JpdGluZy1tb2RlOmxyLXRiO2RpcmVjdGlvbjpsdHI7ZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDowLjI2NDU4MyIKICAgICAgIHg9IjIwLjQxMzQ3MyIKICAgICAgIHk9IjIzMi4zNzE3MiIKICAgICAgIGlkPSJ0ZXh0MSI+PHRzcGFuCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiCiAgICAgICAgIGlkPSJ0c3BhbjEiCiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0OjYwMDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtc2l6ZTo0NS44NjExcHg7Zm9udC1mYW1pbHk6UG9wcGluczstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOidQb3BwaW5zLCBTZW1pLUJvbGQnO2ZvbnQtdmFyaWFudC1saWdhdHVyZXM6bm9ybWFsO2ZvbnQtdmFyaWFudC1jYXBzOm5vcm1hbDtmb250LXZhcmlhbnQtbnVtZXJpYzpub3JtYWw7Zm9udC12YXJpYW50LWVhc3QtYXNpYW46bm9ybWFsO2ZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC4yNjQ1ODMiCiAgICAgICAgIHg9IjIwLjQxMzQ3MyIKICAgICAgICAgeT0iMjMyLjM3MTcyIj5BbCBBbWFuZTwvdHNwYW4+PC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==" alt="">Al Amane</a>
+<ul><li><a href="#envoyer">Envoyer</a></li><li><a href="#confiance">Pourquoi Al Amane</a></li><li><a href="#etapes">Comment ça marche</a></li><li><a href="#faq">Questions</a></li></ul>
+<a class="btn gold" href="#livreurs">Devenir livreur</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<h1>Chaque livraison est une <span>promesse tenue.</span></h1>
+<p>Al Amane achemine vos colis, documents et repas partout à Niamey. Un livreur vérifié, un prix connu d’avance, et la carte pour le suivre en direct.</p>
+<div class="stores">
+<a class="store" href="#final"><svg viewBox="0 0 24 24"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.800-.8-3-.8c-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 7 1.200 9.300.8 1.100 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2.100-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900zM14.200 5.700c.6-.8 1.100-1.900.9-3-.9 0-2.100.6-2.700 1.400-.6.700-1.100 1.800-1 2.900 1.100.1 2.200-.5 2.800-1.300z"/></svg><span><small>Bientôt sur</small><b>App Store</b></span></a>
+<a class="store" href="#final"><svg viewBox="0 0 24 24"><path d="M4 2.800v18.400c0 .5.5.8.9.5l15.500-9.200c.4-.2.4-.8 0-1L4.900 2.300c-.4-.3-.9 0-.9.500z"/></svg><span><small>Bientôt sur</small><b>Google Play</b></span></a>
+</div></div>
+<div class="stage">
+<div class="phone" aria-label="Aperçu de l’application Al Amane">
+<div class="map"><svg viewBox="0 0 262 330" aria-hidden="true"><path class="rd" d="M0 80 L262 130"/><path class="rd" d="M70 0 L110 330"/><path class="rd" d="M0 250 L262 215"/><path class="rd" d="M200 0 L176 330"/><path class="rt" d="M36 290 C 96 280, 86 180, 150 170 S 220 90, 246 54"/><circle cx="36" cy="290" r="9" fill="#003d25"/><rect x="238" y="46" width="16" height="16" rx="4" fill="#e0a526"/></svg><div class="rider" aria-hidden="true">🛵</div></div>
+<div class="sheet"><small>Livraison en cours</small><b>Lazaret → Yantala</b>
+<div class="who"><div class="av">M</div><div>Maikibi<br><span>★ 4,8 · arrive dans ~8 min</span></div><div class="call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a5300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></div></div>
+<div class="bar"><u></u></div></div></div>
+<div class="chip c1"><i>✓</i>Colis récupéré</div>
+<div class="chip c2"><i>★</i>Livreur vérifié</div>
+</div></div></header>
+
+<div class="strip"><div class="wrap">
+<div>Prix affiché d’avance<span>Aucune surprise à la remise</span></div>
+<div>Suivi en direct<span>Votre livreur sur la carte</span></div>
+<div>Livreurs vérifiés<span>Identité et permis contrôlés</span></div>
+<div>Partout à Niamey<span>Moto, vélo ou voiture</span></div>
+</div></div>
+
+<section id="envoyer"><div class="wrap">
+<h2>Tout ce qui compte, jusqu’à votre porte.</h2>
+<p class="lead">Un dossier urgent, un déjeuner chaud, un cadeau fragile : choisissez le type de colis, on s’occupe du reste.</p>
+<div class="send">
+<div class="item"><em>📄</em><div><h3>Documents</h3><p>Enveloppes, dossiers, papiers importants</p></div></div>
+<div class="item"><em>📦</em><div><h3>Petits colis</h3><p>Jusqu’à 5 kg</p></div></div>
+<div class="item"><em>🍔</em><div><h3>Repas</h3><p>Livrés chauds</p></div></div>
+<div class="item"><em>💎</em><div><h3>Colis fragiles</h3><p>Transportés avec précaution</p></div></div>
+</div></div></section>
+
+<section class="why" id="confiance"><div class="wrap">
+<h2>Al Amane, c’est la tranquillité d’esprit.</h2>
+<p class="lead">Le nom le dit : la sécurité. Chaque détail du service est pensé pour que vous n’ayez pas à vous inquiéter.</p>
+<div class="rows">
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M8.500 12l2.500 2.500L16 9.500"/></svg></div><h3>Des livreurs de confiance</h3><p>Chaque livreur est contrôlé par notre équipe avant de prendre sa première course. Vous voyez son nom, sa note et son véhicule avant qu’il n’arrive.</p></div>
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.200-7-11a7 7 0 0 1 14 0c0 4.800-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></svg></div><h3>Votre colis, sous vos yeux</h3><p>Suivez le trajet en temps réel et recevez une alerte à chaque étape : récupéré, en route, livré.</p></div>
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.500"/><path d="M6 9v.01M18 15v.01"/></svg></div><h3>Un prix clair, dès le départ</h3><p>Le tarif s’affiche avant que vous confirmiez. Vous savez exactement ce que vous payez, et le livreur est rémunéré à sa juste valeur.</p></div>
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h3>Des preuves à chaque étape</h3><p>Photo du colis à la récupération, confirmation à la livraison. Si un souci survient, notre équipe intervient.</p></div>
+</div></div></section>
+
+<section id="etapes"><div class="wrap">
+<h2>Trois gestes, et c’est parti.</h2>
+<div class="steps">
+<div><h3>Choisissez</h3><p>Indiquez où récupérer et où livrer. Le prix et la durée s’affichent aussitôt.</p></div>
+<div><h3>Suivez</h3><p>Un livreur proche accepte votre course. Vous le voyez avancer sur la carte.</p></div>
+<div><h3>Recevez</h3><p>Le colis est remis, la livraison confirmée. Un geste pour noter votre livreur.</p></div>
+</div></div></section>
+
+<section class="city"><div class="wrap">
+<h2>Toute la ville, du Plateau à Yantala.</h2>
+<p class="lead">Al Amane relie les quartiers de Niamey, des zones d’affaires aux quartiers résidentiels.</p>
+<div class="tags"><span>Plateau</span><span>Lazaret</span><span>Yantala</span><span>Talladjé</span><span>Goudel</span><span>Lossagoungou</span><span>Niamey 2000</span><span>Koira Kano</span><span>Saga</span><span>Gamkallé</span><span>Et bien d’autres</span></div>
+</div></section>
+
+<section id="livreurs"><div class="wrap">
+<h2>Une application, deux façons d’en profiter.</h2>
+<div class="two">
+<div class="box"><h3>Vous envoyez</h3><p>Pour vous, votre commerce ou votre équipe.</p><ul><li>Commande en quelques taps</li><li>Suivi en direct sur la carte</li><li>Historique de toutes vos livraisons</li></ul><a class="btn" href="https://wa.me/22780767690?text=As%20Salamu%20'Aleykum%20Al%20Amane%2C%20je%20souhaite%20%C3%AAtre%20pr%C3%A9venu%20du%20lancement." target="_blank" rel="noopener">Être prévenu du lancement</a></div>
+<div class="box d"><h3>Vous livrez</h3><p>Moto, vélo ou voiture : transformez vos trajets en revenus.</p><ul><li>Courses proposées près de vous</li><li>Gains visibles à chaque livraison</li><li>Vous choisissez quand vous êtes disponible</li></ul><a class="btn" href="https://wa.me/22780767690?text=As%20Salamu%20'Aleykum%20Al%20Amane%2C%20je%20souhaite%20devenir%20livreur." target="_blank" rel="noopener">Rejoindre les livreurs</a></div>
+</div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+<h2>Vos questions</h2>
+<div class="faq">
+<details><summary>Que puis-je envoyer ?</summary><p>Des documents, des repas, des petits colis jusqu’à 5 kg et des colis fragiles. Vous précisez le type de colis au moment de la commande.</p></details>
+<details><summary>Comment est calculé le prix ?</summary><p>Selon la distance et la zone. Le prix total s’affiche dans l’application avant que vous ne confirmiez.</p></details>
+<details><summary>Puis-je suivre ma livraison ?</summary><p>Oui. Dès qu’un livreur accepte, vous suivez sa position sur la carte et vous êtes alerté à chaque étape.</p></details>
+<details><summary>Les livreurs sont-ils vérifiés ?</summary><p>Oui. Notre équipe contrôle les documents de chaque livreur avant d’activer son compte.</p></details>
+<details><summary>Comment payer ?</summary><p>Le paiement par Mobile Money est prévu directement dans l’application.</p></details>
+<details><summary>Comment devenir livreur ?</summary><p>Inscrivez-vous dans l’application livreur et envoyez vos documents. Une fois votre dossier validé, vous recevez des courses.</p></details>
+</div></div></section>
+
+<section class="final" id="final"><div class="wrap">
+<img src="data:image/svg+xml;base64,CgoKPHN2ZwogICB3aWR0aD0iMTAwMCIKICAgaGVpZ2h0PSIxMDAwIgogICB2aWV3Qm94PSIwIDAgMjY0LjU4MzMxIDI2NC41ODMzNCIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMSIKICAgc29kaXBvZGk6ZG9jbmFtZT0iQWwgQW1hbmUgYmxhbmMuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjQuNCAoZGNhZjNlN2Q5ZSwgMjAyNi0wNS0wNSkiCiAgIGlua3NjYXBlOmV4cG9ydC1maWxlbmFtZT0iQWwgQW1hbmUgY28ucG5nIgogICBpbmtzY2FwZTpleHBvcnQteGRwaT0iMzAwIgogICBpbmtzY2FwZTpleHBvcnQteWRwaT0iMzAwIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIAogIDxkZWZzCiAgICAgaWQ9ImRlZnMxIiAvPgogIDxnCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXI2IgogICAgIGlua3NjYXBlOmxhYmVsPSJMb2dvIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMTU0MzIyMjUsMTMuMzU2MjEzKSI+CiAgICA8ZwogICAgICAgaW5rc2NhcGU6bGFiZWw9IkZvcm1lcyIKICAgICAgIGlua3NjYXBlOmdyb3VwbW9kZT0ibGF5ZXIiCiAgICAgICBpZD0ibGF5ZXIxIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC44MjcyOTUyOCwwLDAsMC44MjcyOTUyOCw2OS4xMTIwMDgsMC40NjcwMTY2NSkiCiAgICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUiPgogICAgICA8ZwogICAgICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgICAgICBpZD0ibGF5ZXIxLTUiCiAgICAgICAgIGlua3NjYXBlOmxhYmVsPSJJbWFnZSAxIgogICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCg2LjIxNjMxNTUsMCwwLDYuMjE2MzE1NSwtMjIyLjA5OTgzLC0yNDUuNzkzMDQpIj4KICAgICAgICA8cGF0aAogICAgICAgICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjEiCiAgICAgICAgICAgZD0ibSAzNy45NDQ1MjYsNTkuMDAxNDYgOC41NDg5MDUsLTE0Ljc1MDM2NSBjIDAsMCAxLjM2NDc5NSwtMy4wMDE0NzkgMy4wMzcwNzcsMC4wMTQ4MiAxLjY3MjI4MSwzLjAxNjMwMSAxNC4yMDA4NzksMjQuNTEwNzI1IDE0LjIwMDg3OSwyNC41MTA3MjUgMCwwIDIuNjk3ODEsMy42Nzg4MzMgLTEuMzMxMzg3LDMuNjA4NzYgLTQuMDI5MTk3LC0wLjA3MDA3IC02Ljc5NzA4LC0wLjA3MDA3IC02Ljc5NzA4LC0wLjA3MDA3IDAsMCAtMi45NDMwNjYsMC40NTU0NzQgLTUuMTE1MzI5LC0zLjIyMzM1OCAtMi4xNzIyNjIsLTMuNjc4ODMyIC0zLjI5MzQzLC01LjY3NTkxMyAtMy4yOTM0MywtNS42NzU5MTMgMCwwIC0yLjE3MjI2MywtNS4zNjA1ODMgLTkuMjQ5NjM1LC00LjQxNDU5OSB6IgogICAgICAgICAgIGlkPSJwYXRoMTEiIC8+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICAgICAgaWQ9ImxheWVyMiIKICAgICAgICAgaW5rc2NhcGU6bGFiZWw9IkltYWdlIDIiCiAgICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDYuMjE2MzE1NSwwLDAsNi4yMTYzMTU1LC0yMjIuMDk5ODMsLTI0NS43OTMwNCkiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIKICAgICAgICAgICBkPSJtIDMxLjg4MzIxMiw2OS40MjQ4MTggMy4yOTM0MywtNS43NDU5ODYgYyAwLDAgMS44NzQ0NTMsLTMuOTU5MTI0IDYuOTcyMjYzLC0yLjY0NTI1NSA0LjI5MTk3MSwxLjk0NDUyNSAzLjgwMTQ2LDYuMDA4NzU5IDMuODAxNDYsNi4wMDg3NTkgMCwwIC0wLjczNTc2Niw0Ljk5MjcwMSAtNS41MDA3Myw1LjIyMDQzOCAtNC44MzUwMzYsLTAuMDM1MDQgLTcuMDU5ODU0LC0wLjAzNTA0IC03LjA1OTg1NCwtMC4wMzUwNCAwLDAgLTMuMjkzNDMxLDAuNDIwNDM4IC0xLjUwNjU2OSwtMi44MDI5MTkgeiIKICAgICAgICAgICBpZD0icGF0aDEyIiAvPgogICAgICA8L2c+CiAgICAgIDxlbGxpcHNlCiAgICAgICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZTtmaWxsOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjkuMzcxMTciCiAgICAgICAgIGlkPSJwYXRoMTMiCiAgICAgICAgIGN4PSIyNy42OTg1NTMiCiAgICAgICAgIGN5PSIxNjcuMDk4MSIKICAgICAgICAgcng9IjMwLjQ5MzI2MSIKICAgICAgICAgcnk9IjI5LjQxNTIxOCIgLz4KICAgIDwvZz4KICAgIDxnCiAgICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgICAgaWQ9ImxheWVyNCIKICAgICAgIGlua3NjYXBlOmxhYmVsPSJCb3giCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjYxMzUxNTUyLDAsMCwwLjYxMzUxNTUyLDE0Ny40OTE4MSwxMTUuNzYwNTEpIgogICAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lO2ZpbGw6IzAwMDAwMCI+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZTtvcGFjaXR5OjE7ZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDowLjMxOTgxNyIKICAgICAgICAgZD0ibSAzNC44MzUxMTUsMTYyLjYyMTExIDUuNDkxOTk1LC0yLjYwOTg4IHYgNi4yNTI0MyBsIC00LjY3NTIzNiwyLjE4NzQxIGMgMCwwIC0wLjQ1MDYyNiwwLjQ5NzU2IC0wLjg2MzY5OCwtMC40MzE4NSAwLjAyODE3LC0wLjk2Njk3IDAuMDQ2OTQsLTUuMzk4MTEgMC4wNDY5NCwtNS4zOTgxMSB6IgogICAgICAgICBpZD0icGF0aDE5IgogICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLjM0ODQ1MDQsMCwwLDEuMzQ4NDUwNCwtMTI3Ljc1NTIxLC0xODcuOTIyNykiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjEiCiAgICAgICAgIGQ9Im0gLTExMS4zODYzNSwyMi43OTI1ODEgNi42Mzk1OCwtMy4wNzIwNDQgMjIuNTQ0ODMyLDkuODEwNzIgLTcuMjgzNzE2LDMuNDE4ODg3IHoiCiAgICAgICAgIGlkPSJwYXRoMTQiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjEiCiAgICAgICAgIGQ9Im0gLTk2LjQ2NzIxMSwxNi4zOTE5NTMgNi41OTkyMTEsLTMuMTU3ODMgMjIuNjcwMDc4LDkuNTE3NzMzIC03LjIzODc5OCwzLjUxMjk5MSB6IgogICAgICAgICBpZD0icGF0aDE1IiAvPgogICAgICA8cGF0aAogICAgICAgICBzdHlsZT0iZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxIgogICAgICAgICBkPSJtIC0xMTIuNjI1MDgsMjQuNTI2Nzk5IDIyLjA0OTM0NiwxMC4yMDcxMTIgMC4wNDk1NSwyNS43MTU5NzcgLTIxLjYwMzQwNiwtOS45MDk4MTggYyAwLDAgLTAuMzk2MzksLTAuMjQ3NzQ1IC0wLjM5NjM5LC0xLjM4NzM3NCAwLC0xLjEzOTYyOSAtMC4wOTkxLC0yNC42MjU4OTcgLTAuMDk5MSwtMjQuNjI1ODk3IHoiCiAgICAgICAgIGlkPSJwYXRoMTYiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjEiCiAgICAgICAgIGQ9Im0gLTg4LjQ0NTEyMywzNC44ODI1NTggNy42ODAxMDksLTMuNTE3OTg1IC0wLjA0OTU1LDcuMjgzNzE2IGMgMCwwIDAuMzk2MzkzLDEuMTg5MTc4IDEuMDkwMDgsMC41OTQ1ODkgMC44NDIzMzQsLTAuNDQ1OTQyIDYuMzQyMjgzLC0yLjk3Mjk0NSA2LjM0MjI4MywtMi45NzI5NDUgdiAtOC40MjMzNDUgbCA2LjkzNjg3MywtMy4xNzExNDIgMC4wNDk1NSwyNS41MTc3ODEgLTIxLjk1MDI0NywxMC4xNTc1NjMgeiIKICAgICAgICAgaWQ9InBhdGgxNyIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuNDMxNzY4IgogICAgICAgICBkPSJtIC0xMDQuODA4NDMsMTkuNjcwNDM3IDguMzA4NjcyLC0zLjI3NjI0IDIyLjAxODg5Miw5Ljg2NDUxNyAtNy43NDM0LDMuMjcxNzYzIHoiCiAgICAgICAgIGlkPSJwYXRoMTgiIC8+CiAgICA8L2c+CiAgICA8ZwogICAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICAgIGlkPSJsYXllcjUiCiAgICAgICBpbmtzY2FwZTpsYWJlbD0iVmVudCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDQuNjE3NjIzNCwwLDAsNC42MTc2MjM0LC04OC43NzA0NDEsLTE4Mi41MTczMikiPgogICAgICA8cmVjdAogICAgICAgICBzdHlsZT0iZGlzcGxheTpub25lO2ZpbGw6I2UwYTUyNjtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC44MDAyODciCiAgICAgICAgIGlkPSJyZWN0MTciCiAgICAgICAgIHdpZHRoPSIxMS45MTUzNzciCiAgICAgICAgIGhlaWdodD0iMC4zMjU5NDk3OSIKICAgICAgICAgeD0iNjMuMDEwNDQxIgogICAgICAgICB5PSItMTguOTQzMzYzIgogICAgICAgICByeT0iMC4xNjI5NzQ4OSIKICAgICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC41MDUzNTY5MiwwLjg2MjkxMDQyLC0wLjg1ODU5MjMsMC41MTI2NTkwMSwwLDApIiAvPgogICAgICA8cmVjdAogICAgICAgICBzdHlsZT0iZGlzcGxheTpub25lO2ZpbGw6I2UwYTUyNjtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC43MTI1ODQiCiAgICAgICAgIGlkPSJyZWN0MTgiCiAgICAgICAgIHdpZHRoPSI5Ljk4NTkyOTUiCiAgICAgICAgIGhlaWdodD0iMC4zMDgzNTM2NiIKICAgICAgICAgeD0iNjAuNzIxODk3IgogICAgICAgICB5PSItMTguMjc1MTgzIgogICAgICAgICByeT0iMC4xNTQxNzY4MyIKICAgICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC41MDU2MDEwNywwLjg2Mjc2NzM4LC0wLjk1MDQ1MDE0LDAuMzEwODc3MDMsMCwwKSIgLz4KICAgICAgPHJlY3QKICAgICAgICAgc3R5bGU9ImRpc3BsYXk6bm9uZTtmaWxsOiNlMGE1MjY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuNzcxNjc4IgogICAgICAgICBpZD0icmVjdDE5IgogICAgICAgICB3aWR0aD0iMTAuMjcxMDM4IgogICAgICAgICBoZWlnaHQ9IjAuMzUxNTc5ODciCiAgICAgICAgIHg9IjU3LjYxMjkzIgogICAgICAgICB5PSItMTguNDY4NDY0IgogICAgICAgICByeT0iMC4xNzU3ODk5NCIKICAgICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMC40OTcwMzQ0OCwwLjg2NzczMDc5LC0wLjk4NTAxMDI5LDAuMTcyNDk1NTksMCwwKSIgLz4KICAgICAgPHBhdGgKICAgICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC4wNTcyOTg1IgogICAgICAgICBkPSJtIDQ3LjYzMTMwNCw0NC4zMDIwNjUgNS44MTM0MzIsMTAuMjQ3MjM5IDAuMjc1OTIzLC0wLjE3MTI2NiB6IgogICAgICAgICBpZD0icGF0aDEiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuMDU3Mjk4NiIKICAgICAgICAgZD0ibSA0Ny42NDAzNzYsNDYuNDM4MTIxIDQuOTExMzI4LDguNjExNjQ5IDAuMjgyNTY4LC0wLjE0ODAxNCB6IgogICAgICAgICBpZD0icGF0aDIiIC8+CiAgICAgIDxwYXRoCiAgICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuMDU3Mjk4NiIKICAgICAgICAgZD0ibSA0Ni43MjY4ODMsNDYuNjQyMTc5IDQuOTM4MjQxLDguOTM0NTg1IDAuMjY5MTE2LC0wLjE3NDkyMyB6IgogICAgICAgICBpZD0icGF0aDMiIC8+CiAgICA8L2c+CiAgICA8dGV4dAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtc2l6ZToxMC45MDU3cHg7Zm9udC1mYW1pbHk6J0x1dGZleSBBcmFiaWMgREVNTyc7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjonTHV0ZmV5IEFyYWJpYyBERU1PJzt3cml0aW5nLW1vZGU6bHItdGI7ZGlyZWN0aW9uOmx0cjtmaWxsOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjAuMjU1NjAxIgogICAgICAgeD0iMTc0LjY2MzU2IgogICAgICAgeT0iMTY1LjU2NjA0IgogICAgICAgaWQ9InRleHQyIj48dHNwYW4KICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSIKICAgICAgICAgaWQ9InRzcGFuMiIKICAgICAgICAgc3R5bGU9ImZvbnQtc2l6ZToxMC45MDU3cHg7ZmlsbDojMDAwMDAwO3N0cm9rZS13aWR0aDowLjI1NTYwMSIKICAgICAgICAgeD0iMTc0LjY2MzU2IgogICAgICAgICB5PSIxNjUuNTY2MDQiPtin2YTYo9mF2KfZhjwvdHNwYW4+PC90ZXh0PgogIDwvZz4KICA8ZwogICAgIGlua3NjYXBlOmdyb3VwbW9kZT0ibGF5ZXIiCiAgICAgaWQ9ImxheWVyMyIKICAgICBpbmtzY2FwZTpsYWJlbD0iVGV4dGVzIgogICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZSI+CiAgICA8dGV4dAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0OjYwMDtmb250LXN0cmV0Y2g6bm9ybWFsO2ZvbnQtc2l6ZTo0NS44NjExcHg7Zm9udC1mYW1pbHk6UG9wcGluczstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOidQb3BwaW5zLCBTZW1pLUJvbGQnO2ZvbnQtdmFyaWFudC1saWdhdHVyZXM6bm9ybWFsO2ZvbnQtdmFyaWFudC1jYXBzOm5vcm1hbDtmb250LXZhcmlhbnQtbnVtZXJpYzpub3JtYWw7Zm9udC12YXJpYW50LWVhc3QtYXNpYW46bm9ybWFsO3dyaXRpbmctbW9kZTpsci10YjtkaXJlY3Rpb246bHRyO2ZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MC4yNjQ1ODMiCiAgICAgICB4PSIyMC40MTM0NzMiCiAgICAgICB5PSIyMzIuMzcxNzIiCiAgICAgICBpZD0idGV4dDEiPjx0c3BhbgogICAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIgogICAgICAgICBpZD0idHNwYW4xIgogICAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDo2MDA7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LXNpemU6NDUuODYxMXB4O2ZvbnQtZmFtaWx5OlBvcHBpbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjonUG9wcGlucywgU2VtaS1Cb2xkJztmb250LXZhcmlhbnQtbGlnYXR1cmVzOm5vcm1hbDtmb250LXZhcmlhbnQtY2Fwczpub3JtYWw7Zm9udC12YXJpYW50LW51bWVyaWM6bm9ybWFsO2ZvbnQtdmFyaWFudC1lYXN0LWFzaWFuOm5vcm1hbDtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgICB4PSIyMC40MTM0NzMiCiAgICAgICAgIHk9IjIzMi4zNzE3MiI+QWwgQW1hbmU8L3RzcGFuPjwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=" alt="Logo Al Amane">
+<h2>Al Amane arrive à Niamey.</h2>
+<p>Les applications arrivent bientôt sur iPhone et Android. En attendant, écrivez-nous.</p>
+<div style="margin-bottom:28px"><a class="btn gold" href="https://wa.me/22780767690" target="_blank" rel="noopener">Écrire sur WhatsApp · +227 80 76 76 90</a></div>
+<div class="stores"><span class="store"><svg viewBox="0 0 24 24"><path d="M16.400 12.600c0-2.300 1.900-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.800-.8-3-.8c-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 7 1.200 9.300.8 1.100 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2.100-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900z"/></svg><span><small>Bientôt sur</small><b>App Store</b></span></span><span class="store"><svg viewBox="0 0 24 24"><path d="M4 2.800v18.400c0 .5.5.8.9.5l15.500-9.200c.4-.2.4-.8 0-1L4.900 2.300c-.4-.3-.9 0-.9.500z"/></svg><span><small>Bientôt sur</small><b>Google Play</b></span></span></div>
+</div></section>
+<footer><div class="wrap"><span>© 2026 Al Amane · Niamey 2000, Niamey, Niger</span>
+	<span><a href='#cgu'>Conditions d’utilisation</a> · <a href='#confidentialite'>Confidentialité</a></span><span>Chaque livraison est une promesse tenue</span></div></footer>
+<section class='legal' id='cgu'><div class='lbar'><div class='wrap'><a href='#top'>← Retour au site</a><div class='lt'><a href='#cgu' class='on'>Conditions d’utilisation</a><a href='#confidentialite'>Confidentialité</a></div></div></div><article class='doc'><h1>Conditions générales d’utilisation</h1>
+<p class='meta'>Al Amane · Version 1.0 · Dernière mise à jour : 15 octobre 2026</p>
+<p>Les présentes conditions encadrent l’utilisation de l’application mobile et du site Al Amane (« l’Application »), service de livraison locale à Niamey édité par <span class='ph'>[Raison sociale et forme juridique]</span>, Niamey 2000, Niamey, Niger, RCCM <span class='ph'>[numéro]</span> (« l’Éditeur », « nous »). Utiliser l’Application signifie accepter ces conditions.</p>
+<h2>1. Objet et rôle d’Al Amane</h2>
+<p>L’Application permet aux <b>Clients</b> de demander la livraison de colis, documents, repas ou tout objet autorisé entre deux points de la zone de couverture, et aux <b>Livreurs</b> de proposer leurs services en tant que prestataires indépendants. Al Amane est un intermédiaire technique de mise en relation : elle n’est ni transporteur, ni employeur des Livreurs.</p>
+<h2>2. Compte et inscription</h2>
+<ul><li>L’inscription est réservée aux personnes de <b>18 ans révolus</b>, disposant d’un numéro de téléphone valide et résidant ou opérant dans la zone de couverture. Elle se fait par code à usage unique (OTP) envoyé par SMS.</li>
+<li><b>Client :</b> nom, numéro de téléphone ; email et photo en option.</li>
+<li><b>Livreur :</b> en plus, pièce d’identité valide, permis de conduire si le véhicule l’exige, informations et photo du véhicule (type, plaque). Le compte n’est actif qu’après validation du dossier par notre équipe, qui peut refuser une candidature (documents illisibles, incomplets ou douteux).</li>
+<li>Vous garantissez l’exactitude des informations fournies. Une fausse déclaration peut entraîner la suspension ou la suppression du compte.</li>
+<li>Vous protégez vos identifiants. Toute activité depuis votre compte vous est attribuée, sauf usage frauduleux signalé sans délai.</li></ul>
+<h2>3. Utilisation par le Client</h2>
+<ul><li><b>Commande :</b> vous indiquez le départ, l’arrivée, le type de colis et, le cas échéant, les options (urgence, assurance). Le prix est affiché avant confirmation.</li>
+<li><b>Attribution :</b> l’Application propose la course aux Livreurs disponibles à proximité. Vous voyez le nom, le véhicule et la note du Livreur qui accepte.</li>
+<li><b>Suivi et remise :</b> vous suivez la livraison en temps réel. La remise est confirmée dans l’Application ; cette confirmation clôt la course et déclenche la rémunération du Livreur.</li>
+<li><b>Annulation :</b> possible avant la prise en charge du colis. Des frais peuvent s’appliquer, selon le barème affiché dans l’Application, si le Livreur s’est déjà déplacé.</li></ul>
+<h2>4. Utilisation par le Livreur</h2>
+<ul><li><b>Indépendance :</b> aucun lien de subordination ni contrat de travail avec l’Éditeur. Le Livreur reste responsable de ses obligations fiscales, sociales et administratives.</li>
+<li><b>Liberté :</b> il active sa disponibilité quand il le souhaite, sans horaire ni minimum de courses, et accepte ou refuse chaque course dans le délai affiché.</li>
+<li><b>Engagements :</b> respecter le Code de la route et la réglementation nigérienne ; disposer d’une assurance valide pour son véhicule ; manipuler les colis avec soin, sans les ouvrir ni en altérer le contenu ; confirmer chaque étape dans l’Application (récupération avec photo, remise) ; rester courtois.</li>
+<li><b>Rémunération :</b> pour chaque course terminée et confirmée, le Livreur perçoit le montant affiché à l’acceptation de la course.</li></ul>
+<h2>5. Prix, frais de service et paiement</h2>
+<p>Les tarifs sont calculés selon la distance, la zone et les options choisies, et affichés avant toute validation. Les frais de service d’Al Amane sont inclus dans le prix affiché. L’Éditeur peut faire évoluer sa grille tarifaire, sans effet sur les commandes déjà validées.</p>
+<p>Le paiement s’effectue par les moyens proposés dans l’Application : espèces à la livraison et/ou Mobile Money, selon leur disponibilité. Toute contestation de paiement doit être signalée au support dans les <b>7 jours</b> suivant la course.</p>
+<h2>6. Règles d’usage et objets interdits</h2>
+<p>Il est interdit : d’utiliser l’Application à des fins illégales ou frauduleuses ; de faire transporter des biens illicites, dangereux ou prohibés par la loi nigérienne (armes, stupéfiants, produits contrefaits…) ; d’usurper l’identité d’un tiers ; de perturber le Service (piratage, robots) ; de tenir des propos injurieux, discriminatoires ou menaçants envers un autre utilisateur. Tout manquement peut entraîner la suspension immédiate du compte.</p>
+<h2>7. Responsabilité</h2>
+<ul><li>L’Éditeur fournit une plateforme de mise en relation. Il n’est pas partie au contrat de transport entre le Client et le Livreur.</li>
+<li>Le Client est seul responsable de la nature, de la valeur déclarée et de la légalité du contenu de ses colis. L’Éditeur ne vérifie pas systématiquement ce contenu.</li>
+<li>En cas de dommage, de perte ou de retard avéré et imputable à un Livreur, l’Éditeur facilite la résolution du litige via le support. Une indemnisation n’est due que dans les limites de l’assurance éventuellement souscrite à la commande et de la valeur déclarée du colis.</li>
+<li>L’Éditeur s’efforce d’assurer la disponibilité du Service sans la garantir en continu (maintenance, force majeure, panne de réseau).</li>
+<li>Dans les limites permises par la loi, l’Éditeur n’est pas responsable des dommages indirects (perte de chance, préjudice commercial…).</li></ul>
+<h2>8. Propriété intellectuelle</h2>
+<p>Le nom, le logo, la charte graphique, le code, la base de données et les contenus d’Al Amane appartiennent à l’Éditeur ou à ses concédants. Toute reproduction ou exploitation non autorisée est interdite.</p>
+<h2>9. Suspension et résiliation</h2>
+<p>Vous pouvez supprimer votre compte à tout moment depuis les paramètres ou via le support. L’Éditeur peut suspendre ou résilier un compte, avec ou sans préavis selon la gravité, en cas de violation des conditions, de fraude, de comportement dangereux, de signalements répétés ou de fausse déclaration. Vous en êtes informé, sauf urgence (fraude, sécurité).</p>
+<h2>10. Données personnelles</h2>
+<p>Le traitement de vos données est décrit dans notre <a href='#confidentialite'><b>Politique de confidentialité</b></a>, qui fait partie de ces conditions.</p>
+<h2>11. Support et réclamations</h2>
+<p>Pour toute question ou réclamation : via le support de l’Application, par WhatsApp : +227 80 76 76 90 ou par email à <span class='ph'>[email à renseigner]</span>. Nous nous efforçons de répondre dans un délai raisonnable.</p>
+<h2>12. Modification des conditions</h2>
+<p>Nous pouvons modifier ces conditions. Toute modification importante vous est notifiée dans l’Application au moins <b>15 jours</b> avant son entrée en vigueur. Continuer à utiliser le Service après ce délai vaut acceptation.</p>
+<h2>13. Droit applicable et litiges</h2>
+<p>Ces conditions sont soumises au droit nigérien. En cas de litige, nous cherchons d’abord une solution amiable ; à défaut, les tribunaux compétents de Niamey sont saisis, sauf disposition légale contraire.</p>
+<h2>14. Contact</h2>
+<p><span class='ph'>[Raison sociale et forme juridique]</span><br>Niamey 2000, Niamey, Niger<br>WhatsApp : +227 80 76 76 90<br>Email : <span class='ph'>[email à renseigner]</span></p></article></section>
+<section class='legal' id='confidentialite'><div class='lbar'><div class='wrap'><a href='#top'>← Retour au site</a><div class='lt'><a href='#cgu'>Conditions d’utilisation</a><a href='#confidentialite' class='on'>Confidentialité</a></div></div></div><article class='doc'><h1>Politique de confidentialité</h1>
+<p class='meta'>Al Amane · Version 1.0 · Dernière mise à jour : 15 octobre 2026</p>
+<h2>1. Qui sommes-nous ?</h2>
+<p><span class='ph'>[Raison sociale et forme juridique]</span>, Niamey 2000, Niamey, Niger (« nous »), est responsable du traitement de vos données personnelles dans l’application Al Amane. Nous les traitons conformément à la loi n°2022-59 du 16 décembre 2022 relative à la protection des données à caractère personnel, sous le contrôle de la Haute Autorité de Protection des Données à caractère Personnel (HAPDP). Contact : <span class='ph'>[email à renseigner]</span> ou WhatsApp : +227 80 76 76 90.</p>
+<h2>2. Données que nous collectons</h2>
+<div class='tb'><table><tr><th>Catégorie</th><th>Données</th><th>Concerne</th></tr>
+<tr><td>Identité et contact</td><td>Nom, photo de profil, téléphone, email (facultatif)</td><td>Tous</td></tr>
+<tr><td>Documents officiels</td><td>Pièce d’identité, permis de conduire</td><td>Livreurs</td></tr>
+<tr><td>Véhicule</td><td>Type, marque, plaque, photo</td><td>Livreurs</td></tr>
+<tr><td>Adresses</td><td>Adresses de départ et d’arrivée</td><td>Clients</td></tr>
+<tr><td>Livraison</td><td>Historique des commandes, photos de colis et preuves de livraison, évaluations, messages</td><td>Tous</td></tr>
+<tr><td>Paiement</td><td>Numéro Mobile Money, historique des transactions</td><td>Tous</td></tr>
+<tr><td>Localisation</td><td>Position GPS pendant une course ou la disponibilité (Livreur) ; position ponctuelle pour choisir une adresse (Client)</td><td>Tous</td></tr>
+<tr><td>Technique</td><td>Appareil, système, adresse IP, identifiant de notifications push</td><td>Tous</td></tr></table></div>
+<p>Les pièces d’identité des Livreurs bénéficient d’une protection renforcée : accès restreint, stockage sécurisé, usage limité à la vérification d’identité et à la conformité réglementaire.</p>
+<h2>3. Pourquoi nous les utilisons</h2>
+<ul><li><b>Exécuter le service</b> (contrat) : créer votre compte, vous mettre en relation avec un Livreur, suivre la livraison, calculer les prix et traiter les paiements, fournir le support.</li>
+<li><b>Votre consentement :</b> géolocalisation, notifications push.</li>
+<li><b>Obligation légale :</b> conserver certaines pièces d’identité de Livreurs, répondre aux autorités.</li>
+<li><b>Intérêt légitime :</b> sécurité du Service, prévention de la fraude, statistiques anonymisées pour améliorer l’application.</li></ul>
+<h2>4. Avec qui nous les partageons</h2>
+<ul><li><b>Les utilisateurs d’une même course :</b> le Livreur voit le nom et le numéro du Client pour cette livraison, et inversement.</li>
+<li><b>Nos prestataires techniques :</b> hébergement et base de données (Supabase et fournisseurs cloud associés), cartes et itinéraires (Google Maps), notifications (Firebase Cloud Messaging), dans le cadre de contrats garantissant une protection adéquate.</li>
+<li><b>Les opérateurs Mobile Money,</b> pour traiter les transactions.</li>
+<li><b>Les autorités compétentes,</b> sur réquisition légale.</li></ul>
+<p>Nous ne vendons jamais vos données personnelles.</p>
+<h2>5. Transferts hors du Niger</h2>
+<p>Nos serveurs peuvent se trouver hors du Niger. Nous veillons à ce que nos prestataires offrent des garanties de sécurité et de confidentialité adéquates, conformément à la loi applicable aux transferts de données à l’étranger.</p>
+<h2>6. Combien de temps nous les gardons</h2>
+<div class='tb'><table><tr><th>Données</th><th>Durée</th></tr>
+<tr><td>Compte actif</td><td>Durée de vie du compte</td></tr>
+<tr><td>Historique des courses</td><td>5 ans après la dernière activité (comptabilité, preuve)</td></tr>
+<tr><td>Documents d’identité des Livreurs</td><td>Durée d’activité + 1 an après désinscription, sauf obligation légale contraire</td></tr>
+<tr><td>Positions GPS détaillées</td><td>Supprimées après 48 heures, sauf litige en cours</td></tr>
+<tr><td>Compte supprimé</td><td>Suppression ou anonymisation sous 30 jours, sauf obligation légale de conservation</td></tr></table></div>
+<h2>7. Comment nous les protégeons</h2>
+<p>Communications chiffrées (HTTPS/TLS), authentification sécurisée, règles d’accès au niveau de la base de données (chaque client ne voit que ses commandes), sauvegardes régulières et accès limité au personnel habilité, tenu à la confidentialité. En cas de violation susceptible de porter atteinte à vos droits, nous informons la HAPDP et les personnes concernées, comme la loi l’exige.</p>
+<h2>8. Vos droits</h2>
+<p>Vous pouvez demander l’<b>accès</b> à vos données, leur <b>rectification</b>, leur <b>suppression</b> (sous réserve des obligations légales), vous <b>opposer</b> à certains traitements, demander la <b>limitation</b> du traitement ou la <b>portabilité</b> de vos données. Écrivez-nous par WhatsApp : +227 80 76 76 90 ou à <span class='ph'>[email à renseigner]</span> ; nous répondons dans les délais prévus par la loi. Vous pouvez aussi saisir la HAPDP (Niamey, Niger) si vous estimez que vos droits ne sont pas respectés.</p>
+<h2>9. Géolocalisation</h2>
+<p>Elle est indispensable (recherche de Livreurs proches, suivi). Elle n’est active que pendant l’utilisation de l’Application et, pour les Livreurs, pendant leur disponibilité ou une course. Nous ne l’utilisons pas pour un suivi permanent en dehors d’une livraison. Vous pouvez la couper dans les réglages de votre téléphone, mais le Service peut alors devenir indisponible.</p>
+<h2>10. Mineurs</h2>
+<p>Le Service est réservé aux personnes de 18 ans et plus. Nous ne collectons pas sciemment de données de mineurs. Si vous pensez qu’un mineur nous en a transmis, contactez-nous pour qu’elles soient supprimées.</p>
+<h2>11. Cookies</h2>
+<p>Le tableau de bord web utilise des cookies pour maintenir la session et mesurer l’audience de façon anonyme. Vous pouvez les gérer dans votre navigateur.</p>
+<h2>12. Modifications</h2>
+<p>Nous pouvons modifier cette politique. Toute modification importante est notifiée dans l’Application ; la date de mise à jour figure en haut de la page.</p></article></section>
+</body>
+</html>
