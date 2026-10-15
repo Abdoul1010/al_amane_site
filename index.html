@@ -124,6 +124,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .doc th,.doc td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}.doc th{background:var(--soft)}
 .ph{background:#fbf0d4;color:#7a5300;padding:0 5px;border-radius:5px;font-weight:700}
 footer a{color:#fff}
+.fm{display:grid;gap:16px;margin:22px 0;max-width:560px}
+.fm label{display:grid;gap:6px;font-weight:700;font-size:15px}
+.fm input,.fm select,.fm textarea{font:400 16px "DM Sans",sans-serif;padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+.fm textarea{min-height:90px;resize:vertical}
+.fm .ck{display:flex;gap:10px;align-items:flex-start;font-weight:400}.fm .ck input{width:20px;height:20px;margin-top:3px;accent-color:#003d25}
+.fm button{font:700 16px "DM Sans",sans-serif;padding:15px 24px;border-radius:14px;border:0;background:#003d25;color:#fff;cursor:pointer}
+.fm .ok{display:none;padding:14px 16px;border-radius:12px;background:var(--soft);font-size:15px}
+.fm small{color:var(--muted);font-weight:400}
 </style>
 </head>
 <body>
@@ -145,7 +153,7 @@ footer a{color:#fff}
 <div class="phone" aria-label="Aperçu de l’application Al Amane">
 <div class="map"><svg viewBox="0 0 262 330" aria-hidden="true"><path class="rd" d="M0 80 L262 130"/><path class="rd" d="M70 0 L110 330"/><path class="rd" d="M0 250 L262 215"/><path class="rd" d="M200 0 L176 330"/><path class="rt" d="M36 290 C 96 280, 86 180, 150 170 S 220 90, 246 54"/><circle cx="36" cy="290" r="9" fill="#003d25"/><rect x="238" y="46" width="16" height="16" rx="4" fill="#e0a526"/></svg><div class="rider" aria-hidden="true">🛵</div></div>
 <div class="sheet"><small>Livraison en cours</small><b>Lazaret → Yantala</b>
-<div class="who"><div class="av">M</div><div>Maikibi<br><span>★ 4,8 · arrive dans ~8 min</span></div><div class="call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a5300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></div></div>
+<div class="who"><div class="av">A</div><div>Abdoul M.<br><span>★ 4,8 · arrive dans ~8 min</span></div><div class="call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a5300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></div></div>
 <div class="bar"><u></u></div></div></div>
 <div class="chip c1"><i>✓</i>Colis récupéré</div>
 <div class="chip c2"><i>★</i>Livreur vérifié</div>
@@ -218,10 +226,10 @@ footer a{color:#fff}
 <div class="stores"><span class="store"><svg viewBox="0 0 24 24"><path d="M16.400 12.600c0-2.300 1.900-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.800-.8-3-.8c-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 7 1.200 9.300.8 1.100 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2.100-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900z"/></svg><span><small>Bientôt sur</small><b>App Store</b></span></span><span class="store"><svg viewBox="0 0 24 24"><path d="M4 2.800v18.400c0 .5.5.8.9.5l15.500-9.200c.4-.2.4-.8 0-1L4.900 2.300c-.4-.3-.9 0-.9.500z"/></svg><span><small>Bientôt sur</small><b>Google Play</b></span></span></div>
 </div></section>
 <footer><div class="wrap"><span>© 2026 Al Amane · Niamey 2000, Niamey, Niger</span>
-	<span><a href='#cgu'>Conditions d’utilisation</a> · <a href='#confidentialite'>Confidentialité</a></span><span>Chaque livraison est une promesse tenue</span></div></footer>
+	<span><a href='#cgu'>Conditions d’utilisation</a> · <a href='#confidentialite'>Confidentialité</a> · <a href='#suppression-compte'>Supprimer mon compte</a></span><span>Chaque livraison est une promesse tenue</span></div></footer>
 <section class='legal' id='cgu'><div class='lbar'><div class='wrap'><a href='#top'>← Retour au site</a><div class='lt'><a href='#cgu' class='on'>Conditions d’utilisation</a><a href='#confidentialite'>Confidentialité</a></div></div></div><article class='doc'><h1>Conditions générales d’utilisation</h1>
 <p class='meta'>Al Amane · Version 1.0 · Dernière mise à jour : 15 octobre 2026</p>
-<p>Les présentes conditions encadrent l’utilisation de l’application mobile et du site Al Amane (« l’Application »), service de livraison locale à Niamey édité par <span class='ph'>[Raison sociale et forme juridique]</span>, Niamey 2000, Niamey, Niger, RCCM <span class='ph'>[numéro]</span> (« l’Éditeur », « nous »). Utiliser l’Application signifie accepter ces conditions.</p>
+<p>Les présentes conditions encadrent l’utilisation de l’application mobile et du site Al Amane (« l’Application »), service de livraison locale à Niamey édité par <span class='ph'>Rahma Group ( Rahma Multiservices )</span>, Niamey 2000, Niamey, Niger, RCCM NE-NIM-01-2024-A10-03651 (« l’Éditeur », « nous »). Utiliser l’Application signifie accepter ces conditions.</p>
 <h2>1. Objet et rôle d’Al Amane</h2>
 <p>L’Application permet aux <b>Clients</b> de demander la livraison de colis, documents, repas ou tout objet autorisé entre deux points de la zone de couverture, et aux <b>Livreurs</b> de proposer leurs services en tant que prestataires indépendants. Al Amane est un intermédiaire technique de mise en relation : elle n’est ni transporteur, ni employeur des Livreurs.</p>
 <h2>2. Compte et inscription</h2>
@@ -254,21 +262,21 @@ footer a{color:#fff}
 <h2>8. Propriété intellectuelle</h2>
 <p>Le nom, le logo, la charte graphique, le code, la base de données et les contenus d’Al Amane appartiennent à l’Éditeur ou à ses concédants. Toute reproduction ou exploitation non autorisée est interdite.</p>
 <h2>9. Suspension et résiliation</h2>
-<p>Vous pouvez supprimer votre compte à tout moment depuis les paramètres ou via le support. L’Éditeur peut suspendre ou résilier un compte, avec ou sans préavis selon la gravité, en cas de violation des conditions, de fraude, de comportement dangereux, de signalements répétés ou de fausse déclaration. Vous en êtes informé, sauf urgence (fraude, sécurité).</p>
+<p>Vous pouvez supprimer votre compte à tout moment depuis les paramètres ou via le <a href='#suppression-compte'>formulaire de suppression</a>. L’Éditeur peut suspendre ou résilier un compte, avec ou sans préavis selon la gravité, en cas de violation des conditions, de fraude, de comportement dangereux, de signalements répétés ou de fausse déclaration. Vous en êtes informé, sauf urgence (fraude, sécurité).</p>
 <h2>10. Données personnelles</h2>
 <p>Le traitement de vos données est décrit dans notre <a href='#confidentialite'><b>Politique de confidentialité</b></a>, qui fait partie de ces conditions.</p>
 <h2>11. Support et réclamations</h2>
-<p>Pour toute question ou réclamation : via le support de l’Application, par WhatsApp : +227 80 76 76 90 ou par email à <span class='ph'>[email à renseigner]</span>. Nous nous efforçons de répondre dans un délai raisonnable.</p>
+<p>Pour toute question ou réclamation : via le support de l’Application, par WhatsApp : +227 80 76 76 90 ou par email à contact@liv-amane.com. Nous nous efforçons de répondre dans un délai raisonnable.</p>
 <h2>12. Modification des conditions</h2>
 <p>Nous pouvons modifier ces conditions. Toute modification importante vous est notifiée dans l’Application au moins <b>15 jours</b> avant son entrée en vigueur. Continuer à utiliser le Service après ce délai vaut acceptation.</p>
 <h2>13. Droit applicable et litiges</h2>
 <p>Ces conditions sont soumises au droit nigérien. En cas de litige, nous cherchons d’abord une solution amiable ; à défaut, les tribunaux compétents de Niamey sont saisis, sauf disposition légale contraire.</p>
 <h2>14. Contact</h2>
-<p><span class='ph'>[Raison sociale et forme juridique]</span><br>Niamey 2000, Niamey, Niger<br>WhatsApp : +227 80 76 76 90<br>Email : <span class='ph'>[email à renseigner]</span></p></article></section>
+<p>Al Amane - Rahma Group<br>Niamey 2000, Niamey, Niger<br>WhatsApp : +227 80 76 76 90<br>Email : contact@liv-amane.com</p></article></section>
 <section class='legal' id='confidentialite'><div class='lbar'><div class='wrap'><a href='#top'>← Retour au site</a><div class='lt'><a href='#cgu'>Conditions d’utilisation</a><a href='#confidentialite' class='on'>Confidentialité</a></div></div></div><article class='doc'><h1>Politique de confidentialité</h1>
 <p class='meta'>Al Amane · Version 1.0 · Dernière mise à jour : 15 octobre 2026</p>
 <h2>1. Qui sommes-nous ?</h2>
-<p><span class='ph'>[Raison sociale et forme juridique]</span>, Niamey 2000, Niamey, Niger (« nous »), est responsable du traitement de vos données personnelles dans l’application Al Amane. Nous les traitons conformément à la loi n°2022-59 du 16 décembre 2022 relative à la protection des données à caractère personnel, sous le contrôle de la Haute Autorité de Protection des Données à caractère Personnel (HAPDP). Contact : <span class='ph'>[email à renseigner]</span> ou WhatsApp : +227 80 76 76 90.</p>
+<p><span class='ph'>Al Amane</span>, Niamey 2000, Niamey, Niger (« nous »), est responsable du traitement de vos données personnelles dans l’application Al Amane. Contact : contact@liv-amane.com ou WhatsApp : +227 80 76 76 90.</p>
 <h2>2. Données que nous collectons</h2>
 <div class='tb'><table><tr><th>Catégorie</th><th>Données</th><th>Concerne</th></tr>
 <tr><td>Identité et contact</td><td>Nom, photo de profil, téléphone, email (facultatif)</td><td>Tous</td></tr>
@@ -287,7 +295,7 @@ footer a{color:#fff}
 <li><b>Intérêt légitime :</b> sécurité du Service, prévention de la fraude, statistiques anonymisées pour améliorer l’application.</li></ul>
 <h2>4. Avec qui nous les partageons</h2>
 <ul><li><b>Les utilisateurs d’une même course :</b> le Livreur voit le nom et le numéro du Client pour cette livraison, et inversement.</li>
-<li><b>Nos prestataires techniques :</b> hébergement et base de données (Supabase et fournisseurs cloud associés), cartes et itinéraires (Google Maps), notifications (Firebase Cloud Messaging), dans le cadre de contrats garantissant une protection adéquate.</li>
+<li><b>Nos prestataires techniques :</b> hébergement et base de données, cartes et itinéraires, notifications, dans le cadre de contrats garantissant une protection adéquate.</li>
 <li><b>Les opérateurs Mobile Money,</b> pour traiter les transactions.</li>
 <li><b>Les autorités compétentes,</b> sur réquisition légale.</li></ul>
 <p>Nous ne vendons jamais vos données personnelles.</p>
@@ -301,10 +309,10 @@ footer a{color:#fff}
 <tr><td>Positions GPS détaillées</td><td>Supprimées après 48 heures, sauf litige en cours</td></tr>
 <tr><td>Compte supprimé</td><td>Suppression ou anonymisation sous 30 jours, sauf obligation légale de conservation</td></tr></table></div>
 <h2>7. Comment nous les protégeons</h2>
-<p>Communications chiffrées (HTTPS/TLS), authentification sécurisée, règles d’accès au niveau de la base de données (chaque client ne voit que ses commandes), sauvegardes régulières et accès limité au personnel habilité, tenu à la confidentialité. En cas de violation susceptible de porter atteinte à vos droits, nous informons la HAPDP et les personnes concernées, comme la loi l’exige.</p>
+<p>Communications chiffrées, authentification sécurisée, règles d’accès au niveau de la base de données , sauvegardes régulières et accès limité au personnel habilité, tenu à la confidentialité. En cas de violation susceptible de porter atteinte à vos droits, nous prenons les dispositions necessaires, comme la loi l’exige.</p>
 <h2>8. Vos droits</h2>
-<p>Vous pouvez demander l’<b>accès</b> à vos données, leur <b>rectification</b>, leur <b>suppression</b> (sous réserve des obligations légales), vous <b>opposer</b> à certains traitements, demander la <b>limitation</b> du traitement ou la <b>portabilité</b> de vos données. Écrivez-nous par WhatsApp : +227 80 76 76 90 ou à <span class='ph'>[email à renseigner]</span> ; nous répondons dans les délais prévus par la loi. Vous pouvez aussi saisir la HAPDP (Niamey, Niger) si vous estimez que vos droits ne sont pas respectés.</p>
-<h2>9. Géolocalisation</h2>
+<p>Vous pouvez demander l’<b>accès</b> à vos données, leur <b>rectification</b>, leur <b>suppression</b> (sous réserve des obligations légales), vous <b>opposer</b> à certains traitements, demander la <b>limitation</b> du traitement ou la <b>portabilité</b> de vos données. Écrivez-nous par WhatsApp : +227 80 76 76 90 ou à contact@liv-amane.com ; nous répondons dans les délais prévus par la loi.</p>
+<p>Pour supprimer votre compte, utilisez le <a href='#suppression-compte'><b>formulaire de demande de suppression</b></a>.</p><h2>9. Géolocalisation</h2>
 <p>Elle est indispensable (recherche de Livreurs proches, suivi). Elle n’est active que pendant l’utilisation de l’Application et, pour les Livreurs, pendant leur disponibilité ou une course. Nous ne l’utilisons pas pour un suivi permanent en dehors d’une livraison. Vous pouvez la couper dans les réglages de votre téléphone, mais le Service peut alors devenir indisponible.</p>
 <h2>10. Mineurs</h2>
 <p>Le Service est réservé aux personnes de 18 ans et plus. Nous ne collectons pas sciemment de données de mineurs. Si vous pensez qu’un mineur nous en a transmis, contactez-nous pour qu’elles soient supprimées.</p>
@@ -312,5 +320,39 @@ footer a{color:#fff}
 <p>Le tableau de bord web utilise des cookies pour maintenir la session et mesurer l’audience de façon anonyme. Vous pouvez les gérer dans votre navigateur.</p>
 <h2>12. Modifications</h2>
 <p>Nous pouvons modifier cette politique. Toute modification importante est notifiée dans l’Application ; la date de mise à jour figure en haut de la page.</p></article></section>
+<section class='legal' id='suppression-compte'><div class='lbar'><div class='wrap'><a href='#top'>← Retour au site</a><div class='lt'><a href='#cgu'>Conditions d’utilisation</a><a href='#confidentialite'>Confidentialité</a></div></div></div>
+<article class='doc'><h1>Supprimer mon compte Al Amane</h1>
+<p class='meta'>Demande de suppression du compte et des données associées</p>
+<p>Vous pouvez demander la suppression de votre compte Al Amane (Client ou Livreur) et des données personnelles qui y sont liées. Remplissez le formulaire : il prépare un message que vous envoyez à notre équipe sur WhatsApp.</p>
+<form class='fm' id='delform' novalidate>
+<label>Nom complet<input id='d_nom' autocomplete='name' required></label>
+<label>Numéro de téléphone du compte<input id='d_tel' type='tel' autocomplete='tel' placeholder='+227 …' required><small>Le numéro utilisé pour vous inscrire sur Al Amane.</small></label>
+<label>Type de compte<select id='d_type'><option>Client</option><option>Livreur</option></select></label>
+<label>Motif <small>(facultatif)</small><textarea id='d_motif'></textarea></label>
+<label class='ck'><input type='checkbox' id='d_ok' required><span>Je comprends que la suppression de mon compte est définitive et que je ne pourrai plus accéder à mon historique de courses ni à mes gains.</span></label>
+<button type='submit'>Envoyer ma demande sur WhatsApp</button>
+<div class='ok' id='d_msg' role='status'></div><a id='d_link' class='btn' style='display:none;background:#003d25;color:#fff;justify-self:start' href='#' target='_blank' rel='noopener'>Ouvrir WhatsApp</a><a id='d_mail' class='btn' style='display:none;border:2px solid #003d25;color:#003d25;justify-self:start' href='#'>Envoyer par email</a><div id='d_alt' style='display:none'><small>Rien ne s’ouvre ? Copiez ce message et envoyez-le sur WhatsApp au +227 80 76 76 90, ou par email à contact@liv-amane.com.</small><textarea id='d_out' readonly style='margin:8px 0'></textarea><button type='button' id='d_copy'>Copier le message</button></div>
+</form>
+<h2>Ce qui se passe ensuite</h2>
+<ul><li>Nous vérifions que la demande vient bien du titulaire du compte, en vous recontactant sur le numéro indiqué.</li>
+<li>Votre compte est supprimé ou anonymisé sous 30 jours.</li>
+<li>Certaines données peuvent être conservées si la loi l’exige (par exemple l’historique des courses à des fins comptables, ou les documents d’un Livreur), puis elles sont supprimées à l’échéance. Voir la <a href='#confidentialite'>Politique de confidentialité</a>.</li></ul>
+</article></section>
+<script>
+(function(){var f=document.getElementById('delform');if(!f)return;
+var $=function(i){return document.getElementById(i)};
+f.addEventListener('submit',function(e){e.preventDefault();
+var n=$('d_nom').value.trim(),t=$('d_tel').value.trim(),m=$('d_motif').value.trim(),box=$('d_msg');box.style.display='block';
+if(!n||t.replace(/\D/g,'').length<8||!$('d_ok').checked){box.textContent='Merci de renseigner votre nom, votre numéro de téléphone et de cocher la confirmation.';return;}
+var txt=['Bonjour Al Amane, je demande la suppression de mon compte.','Nom : '+n,'Téléphone du compte : '+t,'Type de compte : '+$('d_type').value].concat(m?['Motif : '+m]:[],['Je confirme que cette suppression est définitive.']).join('\n');
+var url='https://wa.me/22780767690?text='+encodeURIComponent(txt);
+box.textContent='Votre message est prêt. Appuyez sur « Ouvrir WhatsApp » pour l’envoyer.';
+var a=$('d_link');a.href=url;a.style.display='inline-block';var ml=$('d_mail');ml.href='mailto:contact@liv-amane.com?subject='+encodeURIComponent('Demande de suppression de compte')+'&body='+encodeURIComponent(txt);ml.style.display='inline-block';
+$('d_out').value=txt;$('d_alt').style.display='block';
+try{window.open(url,'_blank');}catch(x){}
+});
+$('d_copy').addEventListener('click',function(){var o=$('d_out');o.select();try{document.execCommand('copy');this.textContent='Message copié ✓';}catch(x){}});
+})();
+</script>
 </body>
 </html>
