@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Al Amane – Bientôt à Niamey</title>
-<link rel="icon" type="image/png" sizes="48x48" href="/images/logoBlanc1.png"><meta name="theme-color" content="#064a33"><meta name="description" content="Quelque chose arrive à Niamey. Observe bien.">
+<title>Al Amane – Chaque livraison est une promesse tenue</title>
+<link rel="icon" type="image/png" sizes="48x48" href="images/logoBlanc1.png"><meta name="theme-color" content="#003d25"><meta name="description" content="Al Amane livre vos colis, documents et repas partout à Niamey, avec un livreur vérifié que vous suivez en direct.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:light;--bg:#f7f6f1;--surface:#fff;--ink:#10211a;--muted:#55665d;--line:#e0e3d9;--deep:#064a33;--deep2:#0b6040;--gold:#e0a526;--gold-ink:#7a5300;--soft:#e6f0e9;--accent:#064a33;
+:root{color-scheme:light;--bg:#f7f6f1;--surface:#fff;--ink:#10211a;--muted:#55665d;--line:#e0e3d9;--deep:#003d25;--deep2:#06553a;--gold:#e0a526;--gold-ink:#7a5300;--soft:#e6f0e9;--accent:#003d25;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
@@ -40,15 +40,15 @@ nav .btn{padding:9px 18px;font-size:15px;border-radius:11px}
 .map{position:relative;height:330px;background:#dfeee4}
 .map svg{width:100%;height:100%;display:block}
 .rd{fill:none;stroke:#fff;stroke-width:11;stroke-linecap:round}
-.rt{fill:none;stroke:#064a33;stroke-width:5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.2s .4s ease-out forwards}
+.rt{fill:none;stroke:#003d25;stroke-width:5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.2s .4s ease-out forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 .rider{position:absolute;left:0;top:0;width:38px;height:38px;margin:-19px 0 0 -19px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:19px;box-shadow:0 0 0 7px rgba(224,165,38,.3);offset-path:path("M36 290 C 96 280, 86 180, 150 170 S 220 90, 246 54");animation:ride 10s 2.6s linear infinite both;offset-distance:0%}
 @keyframes ride{from{offset-distance:0%}to{offset-distance:100%}}
 .sheet{padding:16px 18px 20px}
 .sheet small{color:#55665d;font-size:13px}.sheet b{font:700 19px "Bricolage Grotesque",sans-serif;display:block;margin:2px 0 12px}
 .who{display:flex;align-items:center;gap:12px}
-.av{width:42px;height:42px;border-radius:50%;background:#064a33;color:#fff;display:grid;place-items:center;font-weight:700}
-.who div{flex:1;font-size:14px;line-height:1.3}.who span{color:#55665d}
+.av{width:42px;height:42px;border-radius:100%;background:#003d25;color:#fff;display:grid;place-items:center;font-weight:700}
+.who div{font-size:14px;line-height:1.3}.who span{color:#55665d}
 .call{width:40px;height:40px;border-radius:12px;background:#fbf0d4;display:grid;place-items:center}
 .bar{height:6px;border-radius:6px;background:#e0e3d9;margin-top:16px;overflow:hidden}.bar u{display:block;height:100%;width:62%;background:#e0a526}
 .chip{position:absolute;background:var(--surface);color:var(--ink);border-radius:16px;padding:12px 16px;font-size:14px;font-weight:700;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);display:flex;align-items:center;gap:10px}
@@ -128,50 +128,109 @@ footer a{color:#fff}
 .fm label{display:grid;gap:6px;font-weight:700;font-size:15px}
 .fm input,.fm select,.fm textarea{font:400 16px "DM Sans",sans-serif;padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
 .fm textarea{min-height:90px;resize:vertical}
-.fm .ck{display:flex;gap:10px;align-items:flex-start;font-weight:400}.fm .ck input{width:20px;height:20px;margin-top:3px;accent-color:#064a33}
-.fm button{font:700 16px "DM Sans",sans-serif;padding:15px 24px;border-radius:14px;border:0;background:#064a33;color:#fff;cursor:pointer}
+.fm .ck{display:flex;gap:10px;align-items:flex-start;font-weight:400}.fm .ck input{width:20px;height:20px;margin-top:3px;accent-color:#003d25}
+.fm button{font:700 16px "DM Sans",sans-serif;padding:15px 24px;border-radius:14px;border:0;background:#003d25;color:#fff;cursor:pointer}
 .fm .ok{display:none;padding:14px 16px;border-radius:12px;background:var(--soft);font-size:15px}
 .fm small{color:var(--muted);font-weight:400}
-
-body{background:#064a33}
-.w{min-height:100vh;min-height:100dvh;background:#064a33;color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column}
-.w-tri{position:absolute;right:-12vw;top:-8vh;width:60vw;max-width:760px;aspect-ratio:1/.92;background:#0b6040;clip-path:polygon(50% 0,100% 100%,0 100%)}
-.w-top{position:relative;padding:28px 32px 0}.w-logo{width:120px;height:120px;display:block}
-.w-hero{position:relative;flex:1;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:20px;max-width:1120px;width:100%;margin:0 auto;padding:10px 32px 40px}
-.w-kick{color:#e0a526;font-weight:700;letter-spacing:5px;font-size:15px;margin:0 0 18px}
-.w h1{font-size:clamp(44px,7vw,92px);font-weight:800;letter-spacing:-.03em;line-height:.98;margin:0}
-.w-sub{font-size:22px;color:#e3efe8;margin:22px 0 30px;max-width:24em}
-.w-hint{margin:16px 0 0;color:#cfe3d6;font-size:16px}
-.w-q{font:800 clamp(240px,38vw,520px)/.8 "Bricolage Grotesque",sans-serif;color:#e0a526;text-align:center;animation:wfloat 5s ease-in-out infinite}
-@keyframes wfloat{50%{transform:translateY(-14px) rotate(2deg)}}
-.w-copy>*{animation:wup .8s both}.w-copy>*:nth-child(2){animation-delay:.12s}.w-copy>*:nth-child(3){animation-delay:.24s}.w-copy>*:nth-child(4){animation-delay:.36s}.w-copy>*:nth-child(5){animation-delay:.48s}
-@keyframes wup{from{opacity:0;transform:translateY(18px)}}
-.w-foot{position:relative;background:rgba(0,0,0,.22);padding:20px 32px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;font-size:14px;color:rgba(255,255,255,.78)}
-.w-foot a{color:#fff;white-space:nowrap}
-@media(max-width:820px){.w-hero{grid-template-columns:1fr;gap:0}.w-hero{position:static}.w-q{position:absolute;right:22px;top:50px;font-size:270px;line-height:.8}.w-copy{padding-top:110px}.w-logo{width:96px;height:96px}.w-top{padding:22px 24px 0}.w-hero{padding:0 24px 32px}.w-foot{padding:18px 24px}}
-@media(prefers-reduced-motion:reduce){.w-q,.w-copy>*{animation:none}}
 </style>
 </head>
 <body>
-<main class="w" id="top">
-<div class="w-tri" aria-hidden="true"></div>
-<div class="w-top"><img class="w-logo" src="images/logoBlanc.png" alt="Logo"></div>
-<div class="w-hero">
-<div class="w-copy">
-<p class="w-kick">NIAMEY · BIENTÔT</p>
-<h1>Quelque chose arrive à Niamey.</h1>
-<p class="w-sub">Une promesse. Un nom.<br>Observe bien.</p>
-<a class="btn gold" href="https://wa.me/22780767690?text=%3F" target="_blank" rel="noopener">Être prévenu en premier</a>
-</div>
-<div class="w-q" aria-hidden="true">?</div>
-</div>
-<div class="w-foot">
-	<span>© 2026, Niamey, Niger</span>
-</div>
-</main>
+<nav><div class="wrap">
+<a class="logo" href="#top" aria-label="Al Amane, accueil"><img src="images/logoBlanc.png" alt="">Al Amane</a>
+<ul><li><a href="#envoyer">Envoyer</a></li><li><a href="#confiance">Pourquoi Al Amane</a></li><li><a href="#etapes">Comment ça marche</a></li><li><a href="#faq">Questions</a></li></ul>
+<a class="btn gold" href="#livreurs">Devenir livreur</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<h1>Chaque livraison est une <span>promesse tenue.</span></h1>
+<p>Al Amane achemine vos colis, documents et repas partout à Niamey. Un livreur vérifié, un prix connu d’avance, et la carte pour le suivre en direct.</p>
+<div class="stores">
+<a class="store" href="#final"><svg viewBox="0 0 24 24"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.800-.8-3-.8c-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 7 1.200 9.300.8 1.100 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2.100-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900zM14.200 5.700c.6-.8 1.100-1.900.9-3-.9 0-2.100.6-2.700 1.400-.6.700-1.100 1.800-1 2.900 1.100.1 2.200-.5 2.800-1.300z"/></svg><span><small>Bientôt sur</small><b>App Store</b></span></a>
+<a class="store" href="#final"><svg viewBox="0 0 24 24"><path d="M4 2.800v18.400c0 .5.5.8.9.5l15.500-9.200c.4-.2.4-.8 0-1L4.900 2.300c-.4-.3-.9 0-.9.500z"/></svg><span><small>Bientôt sur</small><b>Google Play</b></span></a>
+</div></div>
+<div class="stage">
+<div class="phone" aria-label="Aperçu de l’application Al Amane">
+<div class="map"><svg viewBox="0 0 262 330" aria-hidden="true"><path class="rd" d="M0 80 L262 130"/><path class="rd" d="M70 0 L110 330"/><path class="rd" d="M0 250 L262 215"/><path class="rd" d="M200 0 L176 330"/><path class="rt" d="M36 290 C 96 280, 86 180, 150 170 S 220 90, 246 54"/><circle cx="36" cy="290" r="9" fill="#003d25"/><rect x="238" y="46" width="16" height="16" rx="4" fill="#e0a526"/></svg><div class="rider" aria-hidden="true">🛵</div></div>
+<div class="sheet"><small>Livraison en cours</small><b>Lazaret → Yantala</b>
+<div class="who"><div class="av">R</div><div>Rayhan M.<br><span>★ 4,8 · arrive dans ~8 min</span></div><div class="call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a5300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></div></div>
+<div class="bar"><u></u></div></div></div>
+<div class="chip c1"><i>✓</i>Colis récupéré</div>
+<div class="chip c2"><i>★</i>Livreur vérifié</div>
+</div></div></header>
+
+<div class="strip"><div class="wrap">
+<div>Prix affiché d’avance<span>Aucune surprise à la remise</span></div>
+<div>Suivi en direct<span>Votre livreur sur la carte</span></div>
+<div>Livreurs vérifiés<span>Identité et permis contrôlés</span></div>
+<div>Partout à Niamey<span>Moto, vélo ou voiture</span></div>
+</div></div>
+
+<section id="envoyer"><div class="wrap">
+<h2>Tout ce qui compte, jusqu’à votre porte.</h2>
+<p class="lead">Un dossier urgent, un déjeuner chaud, un cadeau fragile : choisissez le type de colis, on s’occupe du reste.</p>
+<div class="send">
+<div class="item"><em>📄</em><div><h3>Documents</h3><p>Enveloppes, dossiers, papiers importants</p></div></div>
+<div class="item"><em>📦</em><div><h3>Colis standard</h3><p>Carton, Sac...</p></div></div>
+<div class="item"><em>🍛</em><div><h3>Repas</h3><p>Livrés chauds</p></div></div>
+<div class="item"><em>💎</em><div><h3>Colis fragiles</h3><p>Transportés avec précaution</p></div></div>
+</div></div></section>
+
+<section class="why" id="confiance"><div class="wrap">
+<h2>Al Amane, c’est la tranquillité d’esprit.</h2>
+<p class="lead">Le nom le dit : la sécurité. Chaque détail du service est pensé pour que vous n’ayez pas à vous inquiéter.</p>
+<div class="rows">
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M8.500 12l2.500 2.500L16 9.500"/></svg></div><h3>Des livreurs de confiance</h3><p>Chaque livreur est contrôlé par notre équipe avant de prendre sa première course. Vous voyez son nom, sa note et son véhicule avant qu’il n’arrive.</p></div>
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.200-7-11a7 7 0 0 1 14 0c0 4.800-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></svg></div><h3>Votre colis, sous vos yeux</h3><p>Suivez le trajet en temps réel et recevez une alerte à chaque étape : récupéré, en route, livré.</p></div>
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.500"/><path d="M6 9v.01M18 15v.01"/></svg></div><h3>Un prix clair, dès le départ</h3><p>Le tarif s’affiche avant que vous confirmiez. Vous savez exactement ce que vous payez, et le livreur est rémunéré à sa juste valeur.</p></div>
+<div class="row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h3>Des preuves à chaque étape</h3><p>Photo du colis à la récupération, confirmation à la livraison. Si un souci survient, notre équipe intervient.</p></div>
+</div></div></section>
+
+<section id="etapes"><div class="wrap">
+<h2>Trois gestes, et c’est parti.</h2>
+<div class="steps">
+<div><h3>Choisissez</h3><p>Indiquez où récupérer et où livrer. Le prix et la durée s’affichent aussitôt.</p></div>
+<div><h3>Suivez</h3><p>Un livreur proche accepte votre course. Vous le voyez avancer sur la carte.</p></div>
+<div><h3>Recevez</h3><p>Le colis est remis, la livraison confirmée. Un geste pour noter votre livreur.</p></div>
+</div></div></section>
+
+<section class="city"><div class="wrap">
+<h2>Toute la ville, de l'Aéroport à Diaspora.</h2>
+<p class="lead">Al Amane relie les quartiers de Niamey, des zones d’affaires aux quartiers résidentiels.</p>
+<div class="tags"><span>Plateau</span><span>Lazaret</span><span>Yantala</span><span>Talladjé</span><span>Goudel</span><span>Lossagoungou</span><span>Niamey 2000</span><span>Koira Kano</span><span>Saga</span><span>Gamkallé</span><span>Et bien d’autres</span></div>
+</div></section>
+
+<section id="livreurs"><div class="wrap">
+<h2>Une application, deux façons d’en profiter.</h2>
+<div class="two">
+<div class="box"><h3>Vous envoyez</h3><p>Pour vous, votre commerce ou votre équipe.</p><ul><li>Commande en quelques taps</li><li>Suivi en direct sur la carte</li><li>Historique de toutes vos livraisons</li></ul><a class="btn" href="https://wa.me/22775295277?text=As%20Salamu%20'Aleykum%20Al%20Amane%2C%20je%20souhaite%20%C3%AAtre%20pr%C3%A9venu%20du%20lancement." target="_blank" rel="noopener">Être prévenu du lancement</a></div>
+<div class="box d"><h3>Vous livrez</h3><p>Moto, vélo ou voiture : transformez vos trajets en revenus.</p><ul><li>Courses proposées près de vous</li><li>Gains visibles à chaque livraison</li><li>Vous choisissez quand vous êtes disponible</li></ul><a class="btn" href="https://wa.me/22775295277?text=As%20Salamu%20'Aleykum%20Al%20Amane%2C%20je%20souhaite%20devenir%20livreur." target="_blank" rel="noopener">Rejoindre les livreurs</a></div>
+</div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+<h2>Vos questions</h2>
+<div class="faq">
+<details><summary>Que puis-je envoyer ?</summary><p>Des documents, des repas, des colis standard et des colis fragiles. Vous précisez le type de colis au moment de la commande.</p></details>
+<details><summary>Comment est calculé le prix ?</summary><p>Selon la distance et la zone. Le prix total s’affiche dans l’application avant que vous ne confirmiez.</p></details>
+<details><summary>Puis-je suivre ma livraison ?</summary><p>Oui. Dès qu’un livreur accepte, vous suivez sa position sur la carte et vous êtes alerté à chaque étape.</p></details>
+<details><summary>Les livreurs sont-ils vérifiés ?</summary><p>Oui. Notre équipe contrôle les documents de chaque livreur avant d’activer son compte.</p></details>
+<details><summary>Comment payer ?</summary><p>Vous pouvez payer à la livraison. Le paiement par NITA, AMANA et Mobile Money sont prévu directement dans l’application.</p></details>
+<details><summary>Comment reconnaitre mon livreur ?</summary><p>Chaque livreur Al Amane pocède un badge portant ses informations et un QR code que vous pouvez scanner depuis l'application vous permettant de voir s'il est vérifié et s'il est chargé de recupérer votre colis.</p></details>
+<details><summary>Comment devenir livreur ?</summary><p>Inscrivez-vous dans l’application livreur et envoyez vos documents. Une fois votre dossier validé, vous recevez des courses.</p></details>
+</div></div></section>
+
+<section class="final" id="final"><div class="wrap">
+<img src="images/logo.png" alt="Logo Al Amane">
+<h2>Al Amane arrive à Niamey.</h2>
+<p>Les applications arrivent bientôt sur iPhone et Android. En attendant, écrivez-nous.</p>
+<div style="margin-bottom:28px"><a class="btn gold" href="https://wa.me/22775295277" target="_blank" rel="noopener">Écrire sur WhatsApp</a></div>
+<div class="stores"><span class="store"><svg viewBox="0 0 24 24"><path d="M16.400 12.600c0-2.300 1.900-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.800-.8-3-.8c-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 7 1.200 9.300.8 1.100 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2.100-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900z"/></svg><span><small>Bientôt sur</small><b>App Store</b></span></span><span class="store"><svg viewBox="0 0 24 24"><path d="M4 2.800v18.400c0 .5.5.8.9.5l15.500-9.200c.4-.2.4-.8 0-1L4.900 2.300c-.4-.3-.9 0-.9.500z"/></svg><span><small>Bientôt sur</small><b>Google Play</b></span></span></div>
+</div></section>
+<footer><div class="wrap"><span>© 2026 Al Amane · Niamey, Niger</span>
+	<span><a href='#cgu'>Conditions d’utilisation</a> · <a href='#confidentialite'>Confidentialité</a> </span><span>Chaque livraison est une promesse tenue</span></div></footer>
 <section class='legal' id='cgu'><div class='lbar'><div class='wrap'><a href='#top'>← Retour au site</a><div class='lt'><a href='#cgu' class='on'>Conditions d’utilisation</a><a href='#confidentialite'>Confidentialité</a></div></div></div><article class='doc'><h1>Conditions générales d’utilisation</h1>
 <p class='meta'>Al Amane · Version 1.0 · Dernière mise à jour : 15 octobre 2026</p>
-<p>Les présentes conditions encadrent l’utilisation de l’application mobile et du site Al Amane (« l’Application »), service de livraison locale à Niamey édité par <span class='ph'>Rahma Group ( Rahma Multiservices )</span>, Niamey 2000, Niamey, Niger, RCCM NE-NIM-01-2024-A10-03651 (« l’Éditeur », « nous »). Utiliser l’Application signifie accepter ces conditions.</p>
+<p>Les présentes conditions encadrent l’utilisation de l’application mobile et du site Al Amane (« l’Application »), service de livraison locale à Niamey édité par Rahma Group ( Rahma Multiservices )Niamey, Niger, RCCM NE-NIM-01-2024-A10-03651 (« l’Éditeur », « nous »). Utiliser l’Application signifie accepter ces conditions.</p>
 <h2>1. Objet et rôle d’Al Amane</h2>
 <p>L’Application permet aux <b>Clients</b> de demander la livraison de colis, documents, repas ou tout objet autorisé entre deux points de la zone de couverture, et aux <b>Livreurs</b> de proposer leurs services en tant que prestataires indépendants. Al Amane est un intermédiaire technique de mise en relation : elle n’est ni transporteur, ni employeur des Livreurs.</p>
 <h2>2. Compte et inscription</h2>
@@ -208,17 +267,17 @@ body{background:#064a33}
 <h2>10. Données personnelles</h2>
 <p>Le traitement de vos données est décrit dans notre <a href='#confidentialite'><b>Politique de confidentialité</b></a>, qui fait partie de ces conditions.</p>
 <h2>11. Support et réclamations</h2>
-<p>Pour toute question ou réclamation : via le support de l’Application, par WhatsApp : +227 80 76 76 90 ou par email à contact@liv-amane.com. Nous nous efforçons de répondre dans un délai raisonnable.</p>
+<p>Pour toute question ou réclamation : via le support de l’Application, par WhatsApp : +227 75 29 52 77 ou par email à alamane.liv@gmail.com. Nous nous efforçons de répondre dans un délai raisonnable.</p>
 <h2>12. Modification des conditions</h2>
 <p>Nous pouvons modifier ces conditions. Toute modification importante vous est notifiée dans l’Application au moins <b>15 jours</b> avant son entrée en vigueur. Continuer à utiliser le Service après ce délai vaut acceptation.</p>
 <h2>13. Droit applicable et litiges</h2>
 <p>Ces conditions sont soumises au droit nigérien. En cas de litige, nous cherchons d’abord une solution amiable ; à défaut, les tribunaux compétents de Niamey sont saisis, sauf disposition légale contraire.</p>
 <h2>14. Contact</h2>
-<p>Al Amane - Rahma Group<br>Niamey 2000, Niamey, Niger<br>WhatsApp : +227 80 76 76 90<br>Email : contact@liv-amane.com</p></article></section>
+<p>Al Amane - Rahma Group<br> Niamey, Niger<br>WhatsApp : +227 75 29 52 77<br>Email : alamane.liv@gmail.com</p></article></section>
 <section class='legal' id='confidentialite'><div class='lbar'><div class='wrap'><a href='#top'>← Retour au site</a><div class='lt'><a href='#cgu'>Conditions d’utilisation</a><a href='#confidentialite' class='on'>Confidentialité</a></div></div></div><article class='doc'><h1>Politique de confidentialité</h1>
 <p class='meta'>Al Amane · Version 1.0 · Dernière mise à jour : 15 octobre 2026</p>
 <h2>1. Qui sommes-nous ?</h2>
-<p><span class='ph'>Al Amane</span>, Niamey 2000, Niamey, Niger (« nous »), est responsable du traitement de vos données personnelles dans l’application Al Amane. Contact : contact@liv-amane.com ou WhatsApp : +227 80 76 76 90.</p>
+<p><span class='ph'>Al Amane</span> Niamey, Niger (« nous »), est responsable du traitement de vos données personnelles dans l’application Al Amane. Contact : alamane.liv@gmail.com ou WhatsApp : +227 75 29 52 77.</p>
 <h2>2. Données que nous collectons</h2>
 <div class='tb'><table><tr><th>Catégorie</th><th>Données</th><th>Concerne</th></tr>
 <tr><td>Identité et contact</td><td>Nom, photo de profil, téléphone, email (facultatif)</td><td>Tous</td></tr>
@@ -253,7 +312,7 @@ body{background:#064a33}
 <h2>7. Comment nous les protégeons</h2>
 <p>Communications chiffrées, authentification sécurisée, règles d’accès au niveau de la base de données , sauvegardes régulières et accès limité au personnel habilité, tenu à la confidentialité. En cas de violation susceptible de porter atteinte à vos droits, nous prenons les dispositions necessaires, comme la loi l’exige.</p>
 <h2>8. Vos droits</h2>
-<p>Vous pouvez demander l’<b>accès</b> à vos données, leur <b>rectification</b>, leur <b>suppression</b> (sous réserve des obligations légales), vous <b>opposer</b> à certains traitements, demander la <b>limitation</b> du traitement ou la <b>portabilité</b> de vos données. Écrivez-nous par WhatsApp : +227 80 76 76 90 ou à contact@liv-amane.com ; nous répondons dans les délais prévus par la loi.</p>
+<p>Vous pouvez demander l’<b>accès</b> à vos données, leur <b>rectification</b>, leur <b>suppression</b> (sous réserve des obligations légales), vous <b>opposer</b> à certains traitements, demander la <b>limitation</b> du traitement ou la <b>portabilité</b> de vos données. Écrivez-nous par WhatsApp : +227 75 29 52 77 ou à alamane.liv@gmail.com ; nous répondons dans les délais prévus par la loi.</p>
 <p>Pour supprimer votre compte, utilisez le <a href='#suppression-compte'><b>formulaire de demande de suppression</b></a>.</p><h2>9. Géolocalisation</h2>
 <p>Elle est indispensable (recherche de Livreurs proches, suivi). Elle n’est active que pendant l’utilisation de l’Application et, pour les Livreurs, pendant leur disponibilité ou une course. Nous ne l’utilisons pas pour un suivi permanent en dehors d’une livraison. Vous pouvez la couper dans les réglages de votre téléphone, mais le Service peut alors devenir indisponible.</p>
 <h2>10. Mineurs</h2>
@@ -273,7 +332,7 @@ body{background:#064a33}
 <label>Motif <small>(facultatif)</small><textarea id='d_motif'></textarea></label>
 <label class='ck'><input type='checkbox' id='d_ok' required><span>Je comprends que la suppression de mon compte est définitive et que je ne pourrai plus accéder à mon historique de courses ni à mes gains.</span></label>
 <button type='submit'>Envoyer ma demande sur WhatsApp</button>
-<div class='ok' id='d_msg' role='status'></div><a id='d_link' class='btn' style='display:none;background:#064a33;color:#fff;justify-self:start' href='#' target='_blank' rel='noopener'>Ouvrir WhatsApp</a><a id='d_mail' class='btn' style='display:none;border:2px solid #064a33;color:#064a33;justify-self:start' href='#'>Envoyer par email</a><div id='d_alt' style='display:none'><small>Rien ne s’ouvre ? Copiez ce message et envoyez-le sur WhatsApp au +227 80 76 76 90, ou par email à contact@liv-amane.com.</small><textarea id='d_out' readonly style='margin:8px 0'></textarea><button type='button' id='d_copy'>Copier le message</button></div>
+<div class='ok' id='d_msg' role='status'></div><a id='d_link' class='btn' style='display:none;background:#003d25;color:#fff;justify-self:start' href='#' target='_blank' rel='noopener'>Ouvrir WhatsApp</a><a id='d_mail' class='btn' style='display:none;border:2px solid #003d25;color:#003d25;justify-self:start' href='#'>Envoyer par email</a><div id='d_alt' style='display:none'><small>Rien ne s’ouvre ? Copiez ce message et envoyez-le sur WhatsApp au +227 75 29 52 77, ou par email à alamane.liv@gmail.com.</small><textarea id='d_out' readonly style='margin:8px 0'></textarea><button type='button' id='d_copy'>Copier le message</button></div>
 </form>
 <h2>Ce qui se passe ensuite</h2>
 <ul><li>Nous vérifions que la demande vient bien du titulaire du compte, en vous recontactant sur le numéro indiqué.</li>
@@ -289,7 +348,7 @@ if(!n||t.replace(/\D/g,'').length<8||!$('d_ok').checked){box.textContent='Merci 
 var txt=['Bonjour Al Amane, je demande la suppression de mon compte.','Nom : '+n,'Téléphone du compte : '+t,'Type de compte : '+$('d_type').value].concat(m?['Motif : '+m]:[],['Je confirme que cette suppression est définitive.']).join('\n');
 var url='https://wa.me/22780767690?text='+encodeURIComponent(txt);
 box.textContent='Votre message est prêt. Appuyez sur « Ouvrir WhatsApp » pour l’envoyer.';
-var a=$('d_link');a.href=url;a.style.display='inline-block';var ml=$('d_mail');ml.href='mailto:contact@liv-amane.com?subject='+encodeURIComponent('Demande de suppression de compte')+'&body='+encodeURIComponent(txt);ml.style.display='inline-block';
+var a=$('d_link');a.href=url;a.style.display='inline-block';var ml=$('d_mail');ml.href='mailto:alamane.liv@gmail.com?subject='+encodeURIComponent('Demande de suppression de compte')+'&body='+encodeURIComponent(txt);ml.style.display='inline-block';
 $('d_out').value=txt;$('d_alt').style.display='block';
 try{window.open(url,'_blank');}catch(x){}
 });
