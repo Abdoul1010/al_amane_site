@@ -64,7 +64,10 @@ h2{font-size:clamp(34px,5vw,58px);font-weight:800;max-width:14em}
 /* send */
 .send{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
 .item{border-radius:22px;padding:26px 22px 22px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;background:var(--surface);border:1px solid var(--line)}
-.item:nth-child(1){background:var(--deep);color:#fff;border:0}.item:nth-child(2){background:var(--gold);color:#1c1300;border:0}
+.item:nth-child(1){background:var(--deep);color:#fff;border:0}
+.item:nth-child(2){background:var(--gold);color:#1c1300;border:0}
+.item:nth-child(3){border-color: var(--deep)}
+.item:nth-child(4){border-color: var(--gold)}
 .item em{font-style:normal;font-size:44px;line-height:1}.item h3{font-size:25px;margin-bottom:4px}.item p{margin:0;font-size:15px;opacity:.8}
 /* why */
 .why{background:var(--soft)}
@@ -91,7 +94,10 @@ h2{font-size:clamp(34px,5vw,58px);font-weight:800;max-width:14em}
 .box h3{font-size:32px;margin-bottom:10px}.box p{margin:0 0 24px;color:var(--muted)}
 .box ul{margin:0 0 28px;padding:0;list-style:none}.box li{padding:8px 0 8px 28px;position:relative}
 .box li::before{content:"";position:absolute;left:2px;top:17px;width:13px;height:7px;border-left:3px solid var(--gold);border-bottom:3px solid var(--gold);transform:rotate(-45deg)}
-.box.d{background:var(--gold);border:0;color:#1c1300}.box.d p{color:#4a3600}.box.d li::before{border-color:var(--deep)}
+.box.d{background:var(--gold);border:0;color:#1c1300}
+.box.c{border-color: var(--deep);}
+.box.d p{color:#4a3600}
+.box.d li::before{border-color:var(--deep)}
 .box.d .btn{background:var(--deep);color:#fff}.box:not(.d) .btn{background:var(--deep);color:#fff}
 /* faq */
 .faq{max-width:780px;margin-top:40px}
@@ -172,8 +178,8 @@ footer a{color:#fff}
 <div class="send">
 <div class="item"><em>📄</em><div><h3>Documents</h3><p>Enveloppes, dossiers, papiers importants</p></div></div>
 <div class="item"><em>📦</em><div><h3>Colis standard</h3><p>Carton, Sac...</p></div></div>
-<div class="item"><em>🍛</em><div><h3>Repas</h3><p>Livrés chauds</p></div></div>
-<div class="item"><em>💎</em><div><h3>Colis fragiles</h3><p>Transportés avec précaution</p></div></div>
+<div class="item" class="repas"><em>🍛</em><div><h3>Repas</h3><p>Livrés chauds</p></div></div>
+<div class="item" class="colis"><em>💎</em><div><h3>Colis fragiles</h3><p>Transportés avec précaution</p></div></div>
 </div></div></section>
 
 <section class="why" id="confiance"><div class="wrap">
@@ -203,7 +209,7 @@ footer a{color:#fff}
 <section id="livreurs"><div class="wrap">
 <h2>Une application, deux façons d’en profiter.</h2>
 <div class="two">
-<div class="box"><h3>Vous envoyez</h3><p>Pour vous, votre commerce ou votre équipe.</p><ul><li>Commande en quelques taps</li><li>Suivi en direct sur la carte</li><li>Historique de toutes vos livraisons</li></ul><a class="btn" href="https://wa.me/22775295277?text=As%20Salamu%20'Aleykum%20Al%20Amane%2C%20je%20souhaite%20%C3%AAtre%20pr%C3%A9venu%20du%20lancement." target="_blank" rel="noopener">Être prévenu du lancement</a></div>
+<div class="box c"><h3>Vous envoyez</h3><p>Pour vous, votre commerce ou votre équipe.</p><ul><li>Commande en quelques taps</li><li>Suivi en direct sur la carte</li><li>Historique de toutes vos livraisons</li></ul><a class="btn" href="https://wa.me/22775295277?text=As%20Salamu%20'Aleykum%20Al%20Amane%2C%20je%20souhaite%20%C3%AAtre%20pr%C3%A9venu%20du%20lancement." target="_blank" rel="noopener">Être prévenu du lancement</a></div>
 <div class="box d"><h3>Vous livrez</h3><p>Moto, vélo ou voiture : transformez vos trajets en revenus.</p><ul><li>Courses proposées près de vous</li><li>Gains visibles à chaque livraison</li><li>Vous choisissez quand vous êtes disponible</li></ul><a class="btn" href="https://wa.me/22775295277?text=As%20Salamu%20'Aleykum%20Al%20Amane%2C%20je%20souhaite%20devenir%20livreur." target="_blank" rel="noopener">Rejoindre les livreurs</a></div>
 </div></div></section>
 
